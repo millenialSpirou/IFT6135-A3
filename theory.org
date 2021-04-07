@@ -1,0 +1,85 @@
+#+TITLE: IFT6135 A3 theory
+#+author: frederic boileau
+#+options: toc:nil num:nil
+
+
+* Question 4
+
+First we find the closed form solution
+for the GAN discriminator:
+
+\begin{align*}
+\mathbb E_{x \sim p_1} [\log D(x)] + \mathbb E_{x \sim p_0}[\log(1 - D(x))]
+&= \int_x p_1(x)\log(D(x))dx + \int_x p_0(x)\log(1 - D(x))dx\\
+&= \int_x p_1(x)\log(D(x)) + p_0(x)\log(1 - D(x))dx
+\end{align*}
+
+Now we consider the integrand and maximize it to find the optimal discriminator.
+We assume the pdfs are constant so relabel them. Setting the derivative to zero
+we get that the optimal value:
+
+
+\begin{align*}
+f(x) &= A \log x + B \log (1 - x) \\
+\frac{df(x)}{dx} &= A \frac{1}{x} - B\frac{1}{1 - x} \\
+&= - \frac{A - (A+B)x}{x(1-x)} = 0\\
+\Rightarrow x &= \frac{A}{A+B}
+\end{align*}
+
+Moreover
+
+\begin{equation*}
+\frac{d^2 f(x)}{{dx}^2} = - \frac{A}{(\frac{A}{A+B})^2} - \frac{B}{(1 - \frac{A}{A+B})^2} < 0
+\end{equation*}
+
+when \(A, B \in (0,1)\) and so the critical point \(A/(A+B)\) is a maximum.
+
+Now let
+
+\begin{equation*}
+C(G) = \mathbb E_{x\sim p_1}[\log D^*(x)] + \mathbb E_{x \sim p_0}[\log(1 - D^*(x))]
+\end{equation*}
+
+By the above derivation of the optimal discriminator we have that
+
+\begin{align*}
+C(G) &= \int_x p_1(x)\log\left(\frac{p_1(x)}{p_0(x) + p_1(x)}\right) +
+p_0\log \left(\frac{p_0(x)}{p_0(x) + p_1(x)}\right)\\
+&= - \log 2 \int_x p_1(x) + p_0(x)dx +
+\int_x p_1(\log 2 + \log\left(\frac{p_1(x)}{p_0(x) + p_1(x)}\right)) +
+\int_x p_0(\log 2 + \log\left(\frac{p_0(x)}{p_0(x) + p_1(x)}\right))
+\end{align*}
+
+Now we have that pdfs integrated over their domain yield one so we have
+that the first term of the above is \(-2\log2 = -\log4 \). Moreover using
+properties of logs we have that
+
+\begin{equation*}
+\log 2 + \log \left(\frac{p_i(x)}{p_0(x) + p_1(x)}\right)
+= \log \left(\frac{p_i(x)}{(p_0(x) + p_1(x))/2}\right)
+\end{equation*}
+
+Let JSD denote the Jenson-Shannon divergence
+Using the last two identities we can rewrite the preceding expression
+
+\begin{align*}
+C(G) &= -\log 4 + \int_x p_1(x) \log\left(\frac{p_1(x)}{(p_0(x)+p_1(x))/2}\right)
++ \int_x p_0(x) \log\left(\frac{p_0(x)}{(p_0(x)+p_1(x))/2}\right) \\
+&= -\log 4 + KL(p_1 || \frac{p_1 + p_0}{2}) + KL(p_0 || \frac{p_1 + p_0}{2})\\
+&= -\log 4 + 2 \cdot JSD(p_1 || p_0)
+\end{align*}
+
+Hence we have that
+
+\begin{equation*}
+JSD(p1 || p_0) = \frac{C(G) + \log 4}{2}
+\end{equation*}
+
+All in all if we have a trained discriminator we can recover the
+JSD by simply computing the expectations contained in the definition
+of \(C(G)\) and adding a constant with a rescaling in the end.
+
+
+- [[https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html][From GAN to WGAN]]
+- [[https://www.cs.toronto.edu/~duvenaud/courses/csc2541/slides/gan-foundations.pdf]]
+- [[https://srome.github.io/An-Annotated-Proof-of-Generative-Adversarial-Networks-with-Implementation-Notes/][An Annotated Proof of Generative Adversarial Networks with Implementation Not...]]

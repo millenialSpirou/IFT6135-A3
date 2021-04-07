@@ -1,0 +1,11 @@
+torch
+torchvision
+numpy
+scipy
+colorcet
+matplotlib
+pytest
+gradescope-utils
+simple-parsing
+seaborn
+mock

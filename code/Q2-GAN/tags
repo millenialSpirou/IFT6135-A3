@@ -1,0 +1,202 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/fredericb/udem/deeplearning/a3/code/Q2-GAN/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
+AVAILABLE_LOSSES	gan.py	/^AVAILABLE_LOSSES = ['JSD', 'W1']$/;"	v
+AVAILABLE_REGULARIZERS	gan.py	/^AVAILABLE_REGULARIZERS = ['GP', 'R1', None]$/;"	v
+AbstractDataset	utils/data.py	/^class AbstractDataset(object, metaclass=ABCMeta):$/;"	c
+BIGGER_SIZE	dirac.py	/^BIGGER_SIZE = 32$/;"	v
+CIFAR10	data.py	/^class CIFAR10(_Torchvision):$/;"	c
+Critic	model.py	/^class Critic(nn.Module):$/;"	c
+Dataset	utils/data.py	/^class Dataset(AbstractDataset, metaclass=Factory): pass$/;"	c
+DiracCritic	dirac.py	/^class DiracCritic(nn.Module):$/;"	c
+DiracGenerator	dirac.py	/^class DiracGenerator(nn.Module):$/;"	c
+F	gan.py	/^from torch.nn import functional as F$/;"	x	nameref:unknown:functional
+F	score.py	/^import torch.nn.functional as F$/;"	I	nameref:module:torch.nn.functional
+Factory	utils/meta.py	/^class Factory(ABCMeta):$/;"	c
+Generator	model.py	/^class Generator(nn.Module):$/;"	c
+Hyperparameters	run_exp.py	/^class Hyperparameters:$/;"	c
+MEDIUM_SIZE	dirac.py	/^MEDIUM_SIZE = 24$/;"	v
+Management	run_exp.py	/^class Management:$/;"	c
+MultiEpochSampler	utils/data.py	/^class MultiEpochSampler(torch.utils.data.Sampler):$/;"	c
+N	utils/data.py	/^    def N(self):$/;"	m	class:AbstractDataset
+P	score.py	/^from torch.nn import Parameter as P$/;"	x	nameref:unknown:Parameter
+ResBlock	model.py	/^class ResBlock(nn.Module):$/;"	c
+SMALL_SIZE	dirac.py	/^SMALL_SIZE = 18$/;"	v
+SingletonError	utils/meta.py	/^class SingletonError(ValueError):$/;"	c
+SingletonType	utils/meta.py	/^class SingletonType(type):$/;"	c
+State	utils/__init__.py	/^class State(object, metaclass=SingletonType):$/;"	c
+Vector	optim.py	/^Vector = Tuple[float]$/;"	v
+Vector	run_exp.py	/^Vector = Tuple[float]$/;"	v
+WrapInception	score.py	/^class WrapInception(nn.Module):$/;"	c
+_Torchvision	data.py	/^class _Torchvision(AbstractDataset):$/;"	c
+__call__	utils/meta.py	/^    def __call__(cls, *args, **kwargs):$/;"	m	class:SingletonType
+__call__	utils/meta.py	/^    def __call__(cls, type, *args, **kwargs):$/;"	m	class:Factory
+__getattr__	utils/train.py	/^    def __getattr__(self, k):$/;"	m	class:accumulator
+__init__	dirac.py	/^    def __init__(self, std=0.7):$/;"	m	class:DiracGenerator
+__init__	dirac.py	/^    def __init__(self, std=0.7, num_params=1):$/;"	m	class:DiracCritic
+__init__	model.py	/^    def __init__(self, dim, style='anhbnh', learnable_alpha=None,$/;"	m	class:ResBlock
+__init__	model.py	/^    def __init__(self, dimh=64, sn=False):$/;"	m	class:Critic
+__init__	model.py	/^    def __init__(self, dimz=100, dimh=64, default_batch_size=1):$/;"	m	class:Generator
+__init__	score.py	/^    def __init__(self, net):$/;"	m	class:WrapInception
+__init__	utils/__init__.py	/^    def __init__(self, seed, args):$/;"	m	class:State
+__init__	utils/data.py	/^    def __init__(self, data_source,$/;"	m	class:MultiEpochSampler
+__init__	utils/data.py	/^    def __init__(self, root, num_threads=1, download=False, load=True,$/;"	m	class:AbstractDataset
+__init__	utils/meta.py	/^    def __init__(cls, name, bases, dictionary):$/;"	m	class:SingletonType
+__init__	utils/meta.py	/^    def __init__(cls, names, bases, dictionary):$/;"	m	class:Factory
+__init__	utils/meta.py	/^    def __init__(self, cls):$/;"	m	class:SingletonError
+__init__	utils/train.py	/^    def __init__(self):$/;"	m	class:average_meter
+__init__	utils/train.py	/^    def __init__(self, init=None, mode='list'):$/;"	m	class:accumulator
+__init__	utils/train.py	/^    def __init__(self, momentum=0.99):$/;"	m	class:running_average_meter
+__iter__	utils/data.py	/^    def __iter__(self):$/;"	m	class:MultiEpochSampler
+__len__	utils/data.py	/^    def __len__(self):$/;"	m	class:MultiEpochSampler
+_fetch	utils/data.py	/^    def _fetch(self, loader, stream):$/;"	m	class:AbstractDataset
+_get_data_class	data.py	/^    def _get_data_class(self):$/;"	m	class:_Torchvision
+_worker_init_fn	utils/data.py	/^def _worker_init_fn(worker_id):$/;"	f
+accumulate_inception_activations	score.py	/^def accumulate_inception_activations(generator, net,$/;"	f
+accumulator	utils/train.py	/^class accumulator(object):$/;"	c
+animate	dirac.py	/^def animate(trajectory, hps):$/;"	f
+apply_exponential_moving_average	gan.py	/^def apply_exponential_moving_average(source: nn.Module, target: nn.Module,$/;"	f
+args	run_exp.py	/^    args = parser.parse_args()$/;"	v
+average_meter	utils/train.py	/^class average_meter(object):$/;"	c
+batch_size	run_exp.py	/^    batch_size: int = 64  # Number of samples in a training\/test batch$/;"	v	class:Hyperparameters	typeref:typename:int
+build_loader	utils/data.py	/^    def build_loader(self, batch_size, sampler, split=0):$/;"	m	class:AbstractDataset
+build_part	model.py	/^        def build_part(s):$/;"	f	member:ResBlock.__init__	file:
+c	gan.py	/^    c = lambda x: x + 5$/;"	f	function:test_ogp	file:
+c	gan.py	/^    c = lambda x: x + 5$/;"	f	function:test_r1gp	file:
+c	gan.py	/^    c = lambda x: x.sum((-1, -2, -3))$/;"	f	function:test_ogp_2	file:
+c	gan.py	/^    c = lambda x: x.sum((-1, -2, -3))$/;"	f	function:test_r1gp_2	file:
+calculate_inception_score	score.py	/^def calculate_inception_score(pred, num_splits=10):$/;"	f
+cc	dirac.py	/^import colorcet as cc$/;"	I	nameref:module:colorcet
+check_exists	data.py	/^    def check_exists(self, root):$/;"	m	class:_Torchvision
+check_exists	utils/data.py	/^    def check_exists(self, root):$/;"	m	class:AbstractDataset
+cmap	dirac.py	/^cmap = cc.cm.glasbey_cool$/;"	v
+config_logger	utils/__init__.py	/^def config_logger(logpath, displaying=True, saving=True, debug=False):$/;"	f
+convert	utils/__init__.py	/^    def convert(self, x):$/;"	m	class:State
+critic	gan.py	/^    critic = lambda x: x.mean(-1)$/;"	f	function:test_make_losses	file:
+critic_betas	run_exp.py	/^    critic_betas: Vector = (0., 0.99)$/;"	v	class:Hyperparameters	typeref:typename:Vector
+critic_dimh	run_exp.py	/^    critic_dimh: int = 128  # Width of the layers$/;"	v	class:Hyperparameters	typeref:typename:int
+critic_inner_iters	run_exp.py	/^    critic_inner_iters: int = 2  # Number of critic updates per generator update$/;"	v	class:Hyperparameters	typeref:typename:int
+critic_loss	gan.py	/^    def critic_loss(p: Tensor, q: Tensor,$/;"	f	function:make_losses	typeref:typename:Tensor	file:
+critic_lr	run_exp.py	/^    critic_lr: float = 4e-4$/;"	v	class:Hyperparameters	typeref:typename:float
+critic_reg_cf	run_exp.py	/^    critic_reg_cf: float = 0.1  # Coefficient for critic's regularization$/;"	v	class:Hyperparameters	typeref:typename:float
+critic_reg_type	run_exp.py	/^    critic_reg_type: Optional[Text] = None  # Name of critic regularization. Choice from {None, /;"	v	class:Hyperparameters	typeref:typename:Optional[Text]
+critic_use_sn	run_exp.py	/^    critic_use_sn: bool = False  # Substitute critic's layers with spectrally normalized version/;"	v	class:Hyperparameters	typeref:typename:bool
+critic_wd	run_exp.py	/^    critic_wd: float = 1e-6$/;"	v	class:Hyperparameters	typeref:typename:float
+cuda	run_exp.py	/^    cuda: int = 0  # Use CUDA device 0, if available$/;"	v	class:Management	typeref:typename:int
+data	utils/data.py	/^    def data(self):$/;"	m	class:AbstractDataset
+data_path	run_exp.py	/^    data_path: Text = os.path.abspath('datasets')  # Directory where datasets will be downloaded/;"	v	class:Management	typeref:typename:Text
+deterministic	run_exp.py	/^    deterministic: bool = False$/;"	v	class:Management	typeref:typename:bool
+device	utils/__init__.py	/^    def device(self):$/;"	m	class:State
+device	utils/__init__.py	/^    def device(self, device_: int):$/;"	m	class:State
+dirac_target	run_exp.py	/^    dirac_target: float = 0.$/;"	v	class:Hyperparameters	typeref:typename:float
+download	data.py	/^    def download(self, root):$/;"	m	class:_Torchvision
+download	utils/data.py	/^    def download(self, root):$/;"	m	class:AbstractDataset
+draw	dirac.py	/^    def draw(n):$/;"	f	function:animate	file:
+dtype	utils/__init__.py	/^    def dtype(self):$/;"	m	class:State
+dtype	utils/__init__.py	/^    def dtype(self, prec):$/;"	m	class:State
+eval_ctx	utils/train.py	/^def eval_ctx(*model, debug=False, no_grad=True):$/;"	f
+eval_every	run_exp.py	/^    eval_every: int = 2000  # How often evaluation occurs per number of generator updates$/;"	v	class:Management	typeref:typename:int
+eval_step	gan.py	/^    def eval_step(eval_data_iter: Iterator[Tensor],$/;"	f	function:make_eval_step	file:
+exp_name	run_exp.py	/^    exp_name: Text = 'default-exp'  # An identifier for the experiment to be run$/;"	v	class:Management	typeref:typename:Text
+exp_path	run_exp.py	/^    exp_path: Text = os.path.abspath('experiments')  # Directory where experiment results, sampl/;"	v	class:Management	typeref:typename:Text
+find_types	utils/meta.py	/^    def find_types(cls):$/;"	m	class:Factory
+forward	dirac.py	/^    def forward(self, x):  # (N, )$/;"	m	class:DiracCritic
+forward	dirac.py	/^    def forward(self, z=None):$/;"	m	class:DiracGenerator
+forward	model.py	/^    def forward(self, x):$/;"	m	class:Critic
+forward	model.py	/^    def forward(self, x):$/;"	m	class:ResBlock
+forward	model.py	/^    def forward(self, z=None):$/;"	m	class:Generator
+forward	score.py	/^    def forward(self, x):$/;"	m	class:WrapInception
+generate_indices	utils/data.py	/^        def generate_indices(n, b_seen, b_size):$/;"	f	member:MultiEpochSampler.__iter__	file:
+generator_alpha_ema	run_exp.py	/^    generator_alpha_ema: Optional[float] = 0.998  # If not None, apply exponential moving averag/;"	v	class:Hyperparameters	typeref:typename:Optional[float]
+generator_betas	run_exp.py	/^    generator_betas: Vector = (0., 0.99)  # First is used as momentum\/beta1, second is beta2 in/;"	v	class:Hyperparameters	typeref:typename:Vector
+generator_dimh	run_exp.py	/^    generator_dimh: int = 128  # Width of the layers$/;"	v	class:Hyperparameters	typeref:typename:int
+generator_dimz	run_exp.py	/^    generator_dimz: int = 100  # Number of dimensions of iid gaussian noise in generator's input$/;"	v	class:Hyperparameters	typeref:typename:int
+generator_lr	run_exp.py	/^    generator_lr: float = 2e-4  # Learning rate$/;"	v	class:Hyperparameters	typeref:typename:float
+generator_wd	run_exp.py	/^    generator_wd: float = 0.$/;"	v	class:Hyperparameters	typeref:typename:float
+get_all_subclasses	utils/meta.py	/^def get_all_subclasses(parent):$/;"	f
+get_scores	score.py	/^def get_scores(generator, num_images=10000, num_splits=10,$/;"	f
+init_optimizer	optim.py	/^def init_optimizer(variables, type: Text,$/;"	f	typeref:typename:optim.Optimizer
+jsd	gan.py	/^def jsd(cp: Tensor, cq: Tensor) -> Tensor:$/;"	f	typeref:typename:Tensor
+load	utils/data.py	/^    def load(self):$/;"	m	class:AbstractDataset
+load_inception_net	score.py	/^def load_inception_net(parallel=False):$/;"	f
+log_every	run_exp.py	/^    log_every: int = 500  # How often training info will be logged per number of generator updat/;"	v	class:Management	typeref:typename:int
+log_file	run_exp.py	/^    def log_file(self):$/;"	m	class:Management
+log_path	run_exp.py	/^    def log_path(self):$/;"	m	class:Management
+loss_type	run_exp.py	/^    loss_type: Text = 'JSD'  # Name of adversarial objectives used. Choice from {'JSD', 'W1'}$/;"	v	class:Hyperparameters	typeref:typename:Text
+main	run_exp.py	/^def main(management, hps):$/;"	f
+make_eval_step	gan.py	/^def make_eval_step(stats_filename: Text, eval_data_iter: Iterator[Tensor],$/;"	f
+make_losses	gan.py	/^def make_losses(loss_type: Text,$/;"	f
+make_train_step	gan.py	/^def make_train_step(loss_type: Text,$/;"	f
+max_iters	run_exp.py	/^    max_iters: int = 100000  # Maximum number of generator updates$/;"	v	class:Hyperparameters	typeref:typename:int
+metric	gan.py	/^    def metric(p: Tensor, q: Tensor,$/;"	f	function:make_losses	typeref:typename:Tensor	file:
+nn	score.py	/^import torch.nn as nn$/;"	I	nameref:module:torch.nn
+np	dirac.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	gan.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	score.py	/^import numpy as np$/;"	I	nameref:module:numpy
+num_workers	run_exp.py	/^    num_workers: int = 2  # Number of batch assembling workers$/;"	v	class:Management	typeref:typename:int
+numpy_calculate_frechet_distance	score.py	/^def numpy_calculate_frechet_distance(mu1, sigma1, mu2, sigma2, eps=1e-6):$/;"	f
+ogp	gan.py	/^def ogp(p: Tensor, cp: Tensor,$/;"	f	typeref:typename:Tensor
+optimizer	run_exp.py	/^    optimizer: Text = 'Adam'  # or SGD$/;"	v	class:Hyperparameters	typeref:typename:Text
+p3	dirac.py	/^import mpl_toolkits.mplot3d.axes3d as p3$/;"	I	nameref:module:mpl_toolkits.mplot3d.axes3d
+parser	run_exp.py	/^    parser = ArgumentParser("Assignment 3, Practical Problem 2: Generative Adversarial Networks"/;"	v
+plt	dirac.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	run_exp.py	/^from matplotlib import pyplot as plt$/;"	x	nameref:unknown:pyplot
+preload_to_gpu	run_exp.py	/^    preload_to_gpu: bool = True  # If True, then preload entire dataset to GPU, if used$/;"	v	class:Management	typeref:typename:bool
+prepare	data.py	/^    def prepare(self, root, mode='train', preload_to_gpu=False,$/;"	m	class:_Torchvision
+prepare	utils/data.py	/^    def prepare(self, root, **options):$/;"	m	class:AbstractDataset
+prepare_inception	score.py	/^def prepare_inception(filename, data_iterator, net=None):$/;"	f
+prepare_splits	utils/data.py	/^def prepare_splits(splits, N):$/;"	f
+project_lipschitz	dirac.py	/^    def project_lipschitz(self, weight_clipping=1.):$/;"	m	class:DiracCritic
+r1gp	gan.py	/^def r1gp(p: Tensor, cp: Tensor,$/;"	f	typeref:typename:Tensor
+reg_fn	gan.py	/^        reg_fn = lambda p, cp, q, cq, critic: 0.$/;"	f	function:make_losses	file:
+reset	utils/train.py	/^    def reset(self):$/;"	m	class:average_meter
+reset	utils/train.py	/^    def reset(self):$/;"	m	class:running_average_meter
+running_average_meter	utils/train.py	/^class running_average_meter(object):$/;"	c
+sampler	utils/data.py	/^    def sampler(self, split=0, project=None, infinite=True):$/;"	m	class:AbstractDataset
+save_logs	run_exp.py	/^    save_logs: bool = True  # If True, save logs to `log_path`$/;"	v	class:Management	typeref:typename:bool
+seed	run_exp.py	/^    seed: int = 31415  # Fix this for reproducibility$/;"	v	class:Hyperparameters	typeref:typename:int
+seed_prng	utils/train.py	/^def seed_prng(seed, use_cuda=False, deterministic=False):$/;"	f
+set_module_priority	utils/meta.py	/^    def set_module_priority(cls, mod, prior=0):$/;"	m	class:Factory
+shape	data.py	/^    def shape(self):$/;"	m	class:CIFAR10
+shape	utils/data.py	/^    def shape(self):$/;"	m	class:AbstractDataset
+sn_conv2d	model.py	/^def sn_conv2d(*args, **kwargs):$/;"	f
+sns	dirac.py	/^import seaborn as sns$/;"	I	nameref:module:seaborn
+sqrt_newton_schulz	score.py	/^def sqrt_newton_schulz(A, numIters, dtype=None):$/;"	f
+task	run_exp.py	/^    task: Text = 'CIFAR10'  # Choice of tasks {'CIFAR10', 'dirac'}$/;"	v	class:Hyperparameters	typeref:typename:Text
+test_edge_alpha_ema	gan.py	/^def test_edge_alpha_ema():$/;"	f
+test_edge_alpha_ema2	gan.py	/^def test_edge_alpha_ema2():$/;"	f
+test_edge_critic_inner_iters	gan.py	/^def test_edge_critic_inner_iters():$/;"	f
+test_edge_loss_type	gan.py	/^def test_edge_loss_type():$/;"	f
+test_edge_reg_cf	gan.py	/^def test_edge_reg_cf():$/;"	f
+test_edge_reg_type	gan.py	/^def test_edge_reg_type():$/;"	f
+test_jsd	gan.py	/^def test_jsd():$/;"	f
+test_make_losses	gan.py	/^def test_make_losses(loss_type, reg_type):$/;"	f
+test_ogp	gan.py	/^def test_ogp():$/;"	f
+test_ogp_2	gan.py	/^def test_ogp_2():$/;"	f
+test_r1gp	gan.py	/^def test_r1gp():$/;"	f
+test_r1gp_2	gan.py	/^def test_r1gp_2():$/;"	f
+test_w1	gan.py	/^def test_w1():$/;"	f
+tform	data.py	/^from torchvision import transforms as tform$/;"	x	nameref:unknown:transforms
+to_list	utils/train.py	/^    def to_list(self):$/;"	m	class:accumulator
+to_numpy	utils/train.py	/^    def to_numpy(self):$/;"	m	class:accumulator
+to_torch	utils/train.py	/^    def to_torch(self):$/;"	m	class:accumulator
+torch_calculate_frechet_distance	score.py	/^def torch_calculate_frechet_distance(mu1, sigma1, mu2, sigma2, eps=1e-6):$/;"	f
+torch_cov	score.py	/^def torch_cov(m, rowvar=False):$/;"	f
+train_data	run_exp.py	/^        def train_data():$/;"	f	function:main	file:
+train_step	gan.py	/^    def train_step(train_data_iter: Iterator[Tensor],$/;"	f	function:make_train_step	typeref:typename:Tensor	file:
+transform	data.py	/^    def transform(self, batch):$/;"	m	class:_Torchvision
+transform	utils/data.py	/^    def transform(self, batch):$/;"	m	class:AbstractDataset
+typenames	utils/meta.py	/^    def typenames(cls):$/;"	m	class:Factory
+update	utils/train.py	/^    def update(self, val):$/;"	m	class:running_average_meter
+update	utils/train.py	/^    def update(self, values):$/;"	m	class:average_meter
+use_cuda	utils/__init__.py	/^    def use_cuda(self):$/;"	m	class:State
+viz	run_exp.py	/^    viz: bool = False  # Present visualizations during evaluation and post-training$/;"	v	class:Management	typeref:typename:bool
+w1	gan.py	/^def w1(cp: Tensor, cq: Tensor) -> Tensor:$/;"	f	typeref:typename:Tensor
