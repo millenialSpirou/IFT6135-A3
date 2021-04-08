@@ -122,6 +122,7 @@ def r1gp(p: Tensor, cp: Tensor,
         :math:`\mathcal{R}_1` regularization term, a scalar tensor of size ``()``.
 
     """
+    p.requires_grad = True
     cp = critic(p)
     grad = torch.autograd.grad(cp, p,
             grad_outputs=torch.ones_like(cp), retain_graph=True,
@@ -169,7 +170,15 @@ def ogp(p: Tensor, cp: Tensor,
         :math:`\mathcal{G}` regularization term, a scalar tensor of size ``()``.
 
     """
-    eps = torch.rand(p.size(0)).unsqueeze(1)
+    p.requires_grad = True
+
+    batch_size = p.size(0)
+    dim = [batch_size]
+    for i in range(len(p.shape) - 1):
+        dim.append(1)
+
+    eps = torch.rand(tuple(dim)).expand_as(p)
+
     xhat = eps * p + (1 - eps) * q
     f_xhat = critic(xhat)
 
@@ -178,7 +187,7 @@ def ogp(p: Tensor, cp: Tensor,
             create_graph=True, only_inputs=True)[0]
 
     
-    grad_norm = torch.square(torch.norm(grad, 2, dim=-1) - torch.ones(p.size(0)))
+    grad_norm = torch.square(torch.norm(grad, 2, dim=-1) - torch.ones(dim))
     
     return torch.mean(grad_norm)
 
@@ -378,9 +387,29 @@ def make_train_step(loss_type: Text,
             a scalar tensor of size ``()``.
         """
         # TODO
+
+        for i in range(critic_inner_iters):
+            true_X = next(train_data_iter)
+            fake_X = generator()
+            critic_optim.zero_grad()
+
+            loss = critic_loss(true_X, fake_X, critic)
+            loss.backward()
+            critic_optim.step()
+
         true_X = next(train_data_iter)
         fake_X = generator()
-        raise NotImplementedError("Implement as part of assignment 3.")
+        generator_optim.zero_grad()
+        gen_loss = metric(true_X, fake_X, critic)
+        gen_loss.backward()
+        generator_optim.step()
+
+        if alpha_ema is not None:
+            apply_exponential_moving_average(
+                    generator, test_generator, alpha=alpha_ema)
+
+        return gen_loss
+        
 
     return train_step
 

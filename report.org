@@ -1,0 +1,92 @@
+#+TITLE: IFT6135 A3 report
+#+author: frederic boileau
+#+options: toc:nil num:nil
+
+* VAE
+#+caption: results of training VAE
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./elboandll.png]]
+
+* GAN
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-1.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-10.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-2.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-3.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-4.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-5.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-6.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-7.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-8.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-jsd-9.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-1.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-10.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-2.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-3.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-4.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-5.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-6.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-7.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-8.png]]
+
+#+attr_org: :width 700
+#+attr_LaTex: :placement [!htpb]
+[[./pics/dirac-w1-9.png]]
+* NF
