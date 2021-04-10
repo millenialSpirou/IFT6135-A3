@@ -48,8 +48,8 @@ def jsd(cp: Tensor, cq: Tensor) -> Tensor:
         The estimated Jensen-Shannon divergence, a scalar tensor of size ``()``.
 
     """
-    expected1 = torch.mean(torch.log(torch.sigmoid(cp)))
-    expected2 = torch.mean(torch.log(torch.sigmoid(-cq)))
+    expected1 = torch.mean(F.logsigmoid(cp))
+    expected2 = torch.mean(F.logsigmoid(-cq))
     expected = expected1 + expected2
 
     jsd = (expected + np.log(4)) / 2 
@@ -187,7 +187,7 @@ def ogp(p: Tensor, cp: Tensor,
             create_graph=True, only_inputs=True)[0]
 
     
-    grad_norm = torch.square(torch.norm(grad, 2, dim=-1) - torch.ones(dim))
+    grad_norm = torch.square(torch.norm(grad, 2, dim=-1) - torch.ones(dim, dtype=torch.float64))
     
     return torch.mean(grad_norm)
 

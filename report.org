@@ -9,7 +9,7 @@
 [[./elboandll.png]]
 
 * GAN
-
+** dirac
 #+attr_org: :width 700
 #+attr_LaTex: :placement [!htpb]
 [[./pics/dirac-jsd-1.png]]
@@ -89,4 +89,952 @@
 #+attr_org: :width 700
 #+attr_LaTex: :placement [!htpb]
 [[./pics/dirac-w1-9.png]]
+** cifar jsd 1
+Exp:: time 2021-04-08 03:41:49,495 | Training
+Exp.Train:: time 2021-04-08 03:44:12,777 | step 500 | loss(JSD) 0.691 (0.693)
+Exp.Train:: time 2021-04-08 03:46:29,192 | step 1000 | loss(JSD) 0.693 (0.693)
+Exp.Train:: time 2021-04-08 03:48:40,646 | step 1500 | loss(JSD) 0.693 (0.693)
+Exp.Train:: time 2021-04-08 03:50:53,777 | step 2000 | loss(JSD) 0.693 (0.693)
+
+Exp.Eval:: time 2021-04-08 03:52:06,030 | step 2000 | IS 1.008 | FID 592.690 | cp 17.432 | cq -18.693
+Exp.Train:: time 2021-04-08 03:54:23,261 | step 2500 | loss(JSD) 0.693 (0.693)
+Exp.Train:: time 2021-04-08 03:56:45,287 | step 3000 | loss(JSD) 0.693 (0.693)
+Exp.Train:: time 2021-04-08 03:58:58,582 | step 3500 | loss(JSD) 0.693 (0.693)
+Exp.Train:: time 2021-04-08 04:01:15,033 | step 4000 | loss(JSD) 0.648 (0.693)
+
+Exp.Eval:: time 2021-04-08 04:02:27,340 | step 4000 | IS 1.020 | FID 571.794 | cp 15.775 | cq -26.950
+Exp.Train:: time 2021-04-08 04:04:41,507 | step 4500 | loss(JSD) 0.516 (0.188)
+Exp.Train:: time 2021-04-08 04:07:02,687 | step 5000 | loss(JSD) 0.594 (0.525)
+Exp.Train:: time 2021-04-08 04:09:24,872 | step 5500 | loss(JSD) 0.644 (0.690)
+Exp.Train:: time 2021-04-08 04:11:46,682 | step 6000 | loss(JSD) 0.654 (0.692)
+
+Exp.Eval:: time 2021-04-08 04:12:58,607 | step 6000 | IS 2.145 | FID 222.898 | cp 10.921 | cq -6.039
+Exp.Train:: time 2021-04-08 04:15:20,190 | step 6500 | loss(JSD) 0.643 (0.662)
+Exp.Train:: time 2021-04-08 04:17:41,307 | step 7000 | loss(JSD) 0.669 (0.692)
+Exp.Train:: time 2021-04-08 04:20:00,347 | step 7500 | loss(JSD) 0.675 (0.693)
+Exp.Train:: time 2021-04-08 04:22:19,021 | step 8000 | loss(JSD) 0.680 (0.692)
+
+Exp.Eval:: time 2021-04-08 04:23:31,756 | step 8000 | IS 2.461 | FID 214.320 | cp 24.138 | cq 1.995
+Exp.Train:: time 2021-04-08 04:25:51,621 | step 8500 | loss(JSD) 0.676 (0.693)
+Exp.Train:: time 2021-04-08 04:28:07,941 | step 9000 | loss(JSD) 0.690 (0.693)
+Exp.Train:: time 2021-04-08 04:30:26,602 | step 9500 | loss(JSD) 0.684 (0.692)
+Exp.Train:: time 2021-04-08 04:32:47,809 | step 10000 | loss(JSD) 0.674 (0.691)
+
+Exp.Eval:: time 2021-04-08 04:34:00,477 | step 10000 | IS 2.543 | FID 218.319 | cp 17.123 | cq -2.198
+Exp.Train:: time 2021-04-08 04:36:21,348 | step 10500 | loss(JSD) 0.682 (0.693)
+Exp.Train:: time 2021-04-08 04:38:38,294 | step 11000 | loss(JSD) 0.683 (0.692)
+Exp.Train:: time 2021-04-08 04:40:56,299 | step 11500 | loss(JSD) 0.683 (0.693)
+Exp.Train:: time 2021-04-08 04:43:16,596 | step 12000 | loss(JSD) 0.684 (0.693)
+
+Exp.Eval:: time 2021-04-08 04:44:28,949 | step 12000 | IS 2.579 | FID 178.212 | cp 18.578 | cq -10.517
+Exp.Train:: time 2021-04-08 04:46:48,206 | step 12500 | loss(JSD) 0.650 (0.692)
+Exp.Train:: time 2021-04-08 04:49:09,101 | step 13000 | loss(JSD) 0.684 (0.691)
+Exp.Train:: time 2021-04-08 04:51:27,573 | step 13500 | loss(JSD) 0.683 (0.690)
+Exp.Train:: time 2021-04-08 04:53:47,792 | step 14000 | loss(JSD) 0.684 (0.677)
+
+Exp.Eval:: time 2021-04-08 04:55:00,430 | step 14000 | IS 2.568 | FID 167.941 | cp 15.210 | cq -10.878
+Exp.Train:: time 2021-04-08 04:57:19,996 | step 14500 | loss(JSD) 0.688 (0.693)
+Exp.Train:: time 2021-04-08 04:59:36,897 | step 15000 | loss(JSD) 0.690 (0.692)
+Exp.Train:: time 2021-04-08 05:01:56,070 | step 15500 | loss(JSD) 0.683 (0.691)
+Exp.Train:: time 2021-04-08 05:04:15,594 | step 16000 | loss(JSD) 0.683 (0.693)
+
+Exp.Eval:: time 2021-04-08 05:05:27,441 | step 16000 | IS 2.795 | FID 160.098 | cp 18.362 | cq -9.826
+Exp.Train:: time 2021-04-08 05:07:46,979 | step 16500 | loss(JSD) 0.677 (0.693)
+Exp.Train:: time 2021-04-08 05:10:04,860 | step 17000 | loss(JSD) 0.687 (0.693)
+Exp.Train:: time 2021-04-08 05:12:24,572 | step 17500 | loss(JSD) 0.685 (0.693)
+Exp.Train:: time 2021-04-08 05:14:44,248 | step 18000 | loss(JSD) 0.682 (0.692)
+
+Exp.Eval:: time 2021-04-08 05:15:56,988 | step 18000 | IS 2.843 | FID 160.529 | cp 19.372 | cq -11.431
+Exp.Train:: time 2021-04-08 05:18:15,194 | step 18500 | loss(JSD) 0.664 (0.689)
+Exp.Train:: time 2021-04-08 05:20:34,825 | step 19000 | loss(JSD) 0.682 (0.688)
+Exp.Train:: time 2021-04-08 05:22:54,158 | step 19500 | loss(JSD) 0.682 (0.668)
+Exp.Train:: time 2021-04-08 05:25:14,056 | step 20000 | loss(JSD) 0.661 (0.691)
+
+Exp.Eval:: time 2021-04-08 05:26:26,512 | step 20000 | IS 2.696 | FID 156.565 | cp 18.427 | cq -3.862
+Exp.Train:: time 2021-04-08 05:28:45,222 | step 20500 | loss(JSD) 0.680 (0.692)
+Exp.Train:: time 2021-04-08 05:31:03,941 | step 21000 | loss(JSD) 0.682 (0.645)
+Exp.Train:: time 2021-04-08 05:33:23,157 | step 21500 | loss(JSD) 0.664 (0.529)
+Exp.Train:: time 2021-04-08 05:35:43,357 | step 22000 | loss(JSD) 0.687 (0.692)
+
+Exp.Eval:: time 2021-04-08 05:36:55,740 | step 22000 | IS 2.712 | FID 155.729 | cp 28.232 | cq -11.979
+Exp.Train:: time 2021-04-08 05:39:14,794 | step 22500 | loss(JSD) 0.673 (0.689)
+Exp.Train:: time 2021-04-08 05:41:34,797 | step 23000 | loss(JSD) 0.682 (0.691)
+Exp.Train:: time 2021-04-08 05:43:52,511 | step 23500 | loss(JSD) 0.690 (0.693)
+Exp.Train:: time 2021-04-08 05:46:09,968 | step 24000 | loss(JSD) 0.687 (0.692)
+
+Exp.Eval:: time 2021-04-08 05:47:22,200 | step 24000 | IS 2.715 | FID 152.302 | cp 24.264 | cq -22.205
+Exp.Train:: time 2021-04-08 05:49:40,261 | step 24500 | loss(JSD) 0.687 (0.688)
+Exp.Train:: time 2021-04-08 05:51:57,708 | step 25000 | loss(JSD) 0.688 (0.693)
+Exp.Train:: time 2021-04-08 05:54:14,979 | step 25500 | loss(JSD) 0.679 (0.692)
+Exp.Train:: time 2021-04-08 05:56:31,445 | step 26000 | loss(JSD) 0.683 (0.688)
+
+Exp.Eval:: time 2021-04-08 05:57:43,994 | step 26000 | IS 2.683 | FID 151.378 | cp 23.471 | cq -19.522
+Exp.Train:: time 2021-04-08 06:00:02,477 | step 26500 | loss(JSD) 0.662 (0.673)
+Exp.Train:: time 2021-04-08 06:02:20,180 | step 27000 | loss(JSD) 0.690 (0.693)
+Exp.Train:: time 2021-04-08 06:04:37,300 | step 27500 | loss(JSD) 0.689 (0.690)
+Exp.Train:: time 2021-04-08 06:06:55,357 | step 28000 | loss(JSD) 0.688 (0.693)
+
+Exp.Eval:: time 2021-04-08 06:08:08,153 | step 28000 | IS 2.659 | FID 158.150 | cp 22.725 | cq -16.578
+Exp.Train:: time 2021-04-08 06:10:26,602 | step 28500 | loss(JSD) 0.689 (0.693)
+Exp.Train:: time 2021-04-08 06:12:43,282 | step 29000 | loss(JSD) 0.688 (0.693)
+Exp.Train:: time 2021-04-08 06:15:00,017 | step 29500 | loss(JSD) 0.683 (0.680)
+Exp.Train:: time 2021-04-08 06:17:16,780 | step 30000 | loss(JSD) 0.686 (0.693)
+
+Exp.Eval:: time 2021-04-08 06:18:29,231 | step 30000 | IS 2.803 | FID 165.370 | cp 26.671 | cq -22.133
+Exp.Train:: time 2021-04-08 06:20:45,922 | step 30500 | loss(JSD) 0.682 (0.693)
+Exp.Train:: time 2021-04-08 06:23:02,520 | step 31000 | loss(JSD) 0.631 (0.693)
+Exp.Train:: time 2021-04-08 06:25:18,419 | step 31500 | loss(JSD) 0.684 (0.693)
+Exp.Train:: time 2021-04-08 06:27:35,075 | step 32000 | loss(JSD) 0.682 (0.684)
+
+Exp.Eval:: time 2021-04-08 06:28:47,772 | step 32000 | IS 2.948 | FID 156.792 | cp 20.536 | cq -20.336
+Exp.Train:: time 2021-04-08 06:31:04,462 | step 32500 | loss(JSD) 0.686 (0.681)
+Exp.Train:: time 2021-04-08 06:33:20,838 | step 33000 | loss(JSD) 0.689 (0.693)
+Exp.Train:: time 2021-04-08 06:35:36,637 | step 33500 | loss(JSD) 0.667 (0.693)
+Exp.Train:: time 2021-04-08 06:37:52,953 | step 34000 | loss(JSD) 0.686 (0.692)
+
+Exp.Eval:: time 2021-04-08 06:39:05,613 | step 34000 | IS 2.660 | FID 152.338 | cp 24.779 | cq -21.175
+Exp.Train:: time 2021-04-08 06:41:23,002 | step 34500 | loss(JSD) 0.676 (0.693)
+Exp.Train:: time 2021-04-08 06:43:39,292 | step 35000 | loss(JSD) 0.681 (0.693)
+Exp.Train:: time 2021-04-08 06:45:55,048 | step 35500 | loss(JSD) 0.689 (0.693)
+Exp.Train:: time 2021-04-08 06:48:10,987 | step 36000 | loss(JSD) 0.684 (0.693)
+
+Exp.Eval:: time 2021-04-08 06:49:23,591 | step 36000 | IS 2.947 | FID 145.347 | cp 31.792 | cq -19.297
+Exp.Train:: time 2021-04-08 06:51:38,955 | step 36500 | loss(JSD) 0.690 (0.693)
+Exp.Train:: time 2021-04-08 06:53:54,636 | step 37000 | loss(JSD) 0.691 (0.693)
+Exp.Train:: time 2021-04-08 06:56:10,520 | step 37500 | loss(JSD) 0.690 (0.693)
+Exp.Train:: time 2021-04-08 06:58:26,680 | step 38000 | loss(JSD) 0.691 (0.693)
+
+Exp.Eval:: time 2021-04-08 06:59:39,168 | step 38000 | IS 2.742 | FID 148.885 | cp 40.307 | cq -18.784
+Exp.Train:: time 2021-04-08 07:01:54,901 | step 38500 | loss(JSD) 0.689 (0.693)
+Exp.Train:: time 2021-04-08 07:04:11,413 | step 39000 | loss(JSD) 0.690 (0.693)
+Exp.Train:: time 2021-04-08 07:06:27,692 | step 39500 | loss(JSD) 0.687 (0.693)
+Exp.Train:: time 2021-04-08 07:08:43,486 | step 40000 | loss(JSD) 0.688 (0.693)
+
+Exp.Eval:: time 2021-04-08 07:09:56,280 | step 40000 | IS 2.890 | FID 146.703 | cp 29.308 | cq -19.615
+Exp.Train:: time 2021-04-08 07:12:12,322 | step 40500 | loss(JSD) 0.689 (0.693)
+Exp.Train:: time 2021-04-08 07:14:28,161 | step 41000 | loss(JSD) 0.690 (0.689)
+Exp.Train:: time 2021-04-08 07:16:43,949 | step 41500 | loss(JSD) 0.691 (0.693)
+Exp.Train:: time 2021-04-08 07:18:59,910 | step 42000 | loss(JSD) 0.682 (0.691)
+
+Exp.Eval:: time 2021-04-08 07:20:13,191 | step 42000 | IS 2.831 | FID 146.372 | cp 27.821 | cq -19.576
+Exp.Train:: time 2021-04-08 07:22:29,448 | step 42500 | loss(JSD) 0.690 (0.693)
+Exp.Train:: time 2021-04-08 07:24:45,156 | step 43000 | loss(JSD) 0.685 (0.693)
+Exp.Train:: time 2021-04-08 07:26:59,988 | step 43500 | loss(JSD) 0.689 (0.693)
+Exp.Train:: time 2021-04-08 07:29:14,712 | step 44000 | loss(JSD) 0.680 (0.693)
+
+Exp.Eval:: time 2021-04-08 07:30:28,458 | step 44000 | IS 2.822 | FID 139.686 | cp 45.500 | cq -25.769
+Exp.Train:: time 2021-04-08 07:32:42,644 | step 44500 | loss(JSD) 0.671 (0.693)
+Exp.Train:: time 2021-04-08 07:34:58,148 | step 45000 | loss(JSD) 0.687 (0.690)
+Exp.Train:: time 2021-04-08 07:37:13,224 | step 45500 | loss(JSD) 0.690 (0.693)
+Exp.Train:: time 2021-04-08 07:39:27,984 | step 46000 | loss(JSD) 0.689 (0.671)
+
+Exp.Eval:: time 2021-04-08 07:40:41,506 | step 46000 | IS 2.880 | FID 126.627 | cp 31.797 | cq -31.957
+Exp.Train:: time 2021-04-08 07:42:56,439 | step 46500 | loss(JSD) 0.692 (0.693)
+Exp.Train:: time 2021-04-08 07:45:11,076 | step 47000 | loss(JSD) 0.693 (0.693)
+Exp.Train:: time 2021-04-08 07:47:26,219 | step 47500 | loss(JSD) 0.689 (0.693)
+Exp.Train:: time 2021-04-08 07:49:40,973 | step 48000 | loss(JSD) 0.687 (0.693)
+
+Exp.Eval:: time 2021-04-08 07:50:54,448 | step 48000 | IS 2.868 | FID 135.176 | cp 57.782 | cq -30.769
+Exp.Train:: time 2021-04-08 07:53:09,047 | step 48500 | loss(JSD) 0.688 (0.692)
+Exp.Train:: time 2021-04-08 07:55:23,925 | step 49000 | loss(JSD) 0.691 (0.693)
+Exp.Train:: time 2021-04-08 07:57:38,103 | step 49500 | loss(JSD) 0.689 (0.693)
+Exp.Train:: time 2021-04-08 07:59:52,321 | step 50000 | loss(JSD) 0.690 (0.693)
+
+Exp.Eval:: time 2021-04-08 08:01:05,628 | step 50000 | IS 3.266 | FID 152.379 | cp 49.905 | cq -32.626
+Exp:: time 2021-04-08 08:01:05,682 | Final Evaluation
+Exp:: time 2021-04-08 08:02:18,564 | step 50000 | IS 3.301 | FID 151.668 | cp 49.886 | cq -32.492
+** cifar jsd 2
+Exp:: time 2021-04-08 01:36:14,268 | Training
+Exp.Train:: time 2021-04-08 01:38:55,943 | step 500 | loss(JSD) 0.407 (0.411)
+Exp.Train:: time 2021-04-08 01:41:30,299 | step 1000 | loss(JSD) 0.421 (0.446)
+Exp.Train:: time 2021-04-08 01:44:00,494 | step 1500 | loss(JSD) 0.331 (0.217)
+Exp.Train:: time 2021-04-08 01:46:30,715 | step 2000 | loss(JSD) 0.286 (0.347)
+
+Exp.Eval:: time 2021-04-08 01:47:20,666 | step 2000 | IS 2.589 | FID 128.929 | cp 1.022 | cq -0.036
+Exp.Train:: time 2021-04-08 01:49:50,848 | step 2500 | loss(JSD) 0.252 (0.298)
+Exp.Train:: time 2021-04-08 01:52:18,012 | step 3000 | loss(JSD) 0.236 (0.361)
+Exp.Train:: time 2021-04-08 01:54:44,785 | step 3500 | loss(JSD) 0.232 (0.148)
+Exp.Train:: time 2021-04-08 01:57:11,586 | step 4000 | loss(JSD) 0.232 (0.175)
+
+Exp.Eval:: time 2021-04-08 01:57:59,995 | step 4000 | IS 3.319 | FID 91.179 | cp 0.988 | cq 0.300
+Exp.Train:: time 2021-04-08 02:00:26,886 | step 4500 | loss(JSD) 0.228 (0.221)
+Exp.Train:: time 2021-04-08 02:02:53,620 | step 5000 | loss(JSD) 0.238 (0.090)
+Exp.Train:: time 2021-04-08 02:05:20,407 | step 5500 | loss(JSD) 0.252 (0.262)
+Exp.Train:: time 2021-04-08 02:07:47,208 | step 6000 | loss(JSD) 0.262 (0.458)
+
+Exp.Eval:: time 2021-04-08 02:08:35,607 | step 6000 | IS 3.635 | FID 70.193 | cp 1.623 | cq 0.824
+Exp.Train:: time 2021-04-08 02:11:02,411 | step 6500 | loss(JSD) 0.271 (0.174)
+Exp.Train:: time 2021-04-08 02:13:29,158 | step 7000 | loss(JSD) 0.293 (0.158)
+Exp.Train:: time 2021-04-08 02:15:57,015 | step 7500 | loss(JSD) 0.290 (0.321)
+Exp.Train:: time 2021-04-08 02:18:38,555 | step 8000 | loss(JSD) 0.305 (0.372)
+
+Exp.Eval:: time 2021-04-08 02:19:32,206 | step 8000 | IS 3.885 | FID 64.548 | cp 1.442 | cq 0.683
+Exp.Train:: time 2021-04-08 02:22:17,834 | step 8500 | loss(JSD) 0.331 (0.442)
+Exp.Train:: time 2021-04-08 02:25:12,373 | step 9000 | loss(JSD) 0.319 (0.486)
+Exp.Train:: time 2021-04-08 02:28:01,398 | step 9500 | loss(JSD) 0.346 (0.536)
+Exp.Train:: time 2021-04-08 02:30:31,646 | step 10000 | loss(JSD) 0.380 (0.115)
+
+Exp.Eval:: time 2021-04-08 02:31:21,243 | step 10000 | IS 4.183 | FID 57.133 | cp 1.869 | cq 0.853
+Exp.Train:: time 2021-04-08 02:33:51,597 | step 10500 | loss(JSD) 0.369 (0.350)
+Exp.Train:: time 2021-04-08 02:36:21,862 | step 11000 | loss(JSD) 0.372 (0.385)
+Exp.Train:: time 2021-04-08 02:38:50,139 | step 11500 | loss(JSD) 0.355 (0.490)
+Exp.Train:: time 2021-04-08 02:41:16,902 | step 12000 | loss(JSD) 0.370 (0.194)
+
+Exp.Eval:: time 2021-04-08 02:42:05,440 | step 12000 | IS 4.282 | FID 55.774 | cp 1.150 | cq 0.170
+Exp.Train:: time 2021-04-08 02:44:32,380 | step 12500 | loss(JSD) 0.367 (0.479)
+Exp.Train:: time 2021-04-08 02:46:59,172 | step 13000 | loss(JSD) 0.354 (0.200)
+Exp.Train:: time 2021-04-08 02:49:25,949 | step 13500 | loss(JSD) 0.344 (0.178)
+Exp.Train:: time 2021-04-08 02:51:52,795 | step 14000 | loss(JSD) 0.375 (0.630)
+
+Exp.Eval:: time 2021-04-08 02:52:41,183 | step 14000 | IS 4.406 | FID 51.808 | cp 2.900 | cq 1.790
+Exp.Train:: time 2021-04-08 02:55:08,142 | step 14500 | loss(JSD) 0.375 (0.102)
+Exp.Train:: time 2021-04-08 02:57:34,957 | step 15000 | loss(JSD) 0.392 (0.489)
+Exp.Train:: time 2021-04-08 03:00:01,703 | step 15500 | loss(JSD) 0.373 (0.320)
+Exp.Train:: time 2021-04-08 03:02:28,547 | step 16000 | loss(JSD) 0.371 (0.118)
+
+Exp.Eval:: time 2021-04-08 03:03:17,407 | step 16000 | IS 4.370 | FID 51.107 | cp 1.382 | cq 0.355
+Exp.Train:: time 2021-04-08 03:05:44,199 | step 16500 | loss(JSD) 0.361 (0.550)
+Exp.Train:: time 2021-04-08 03:08:10,916 | step 17000 | loss(JSD) 0.362 (0.435)
+Exp.Train:: time 2021-04-08 03:10:37,726 | step 17500 | loss(JSD) 0.371 (0.126)
+Exp.Train:: time 2021-04-08 03:13:04,618 | step 18000 | loss(JSD) 0.401 (0.623)
+
+Exp.Eval:: time 2021-04-08 03:13:53,122 | step 18000 | IS 4.473 | FID 48.837 | cp 2.969 | cq 1.795
+Exp.Train:: time 2021-04-08 03:16:19,994 | step 18500 | loss(JSD) 0.395 (0.237)
+Exp.Train:: time 2021-04-08 03:18:46,780 | step 19000 | loss(JSD) 0.375 (0.579)
+Exp.Train:: time 2021-04-08 03:21:13,762 | step 19500 | loss(JSD) 0.401 (0.164)
+Exp.Train:: time 2021-04-08 03:23:40,541 | step 20000 | loss(JSD) 0.382 (0.537)
+
+Exp.Eval:: time 2021-04-08 03:24:28,844 | step 20000 | IS 4.613 | FID 47.952 | cp 1.801 | cq 0.339
+Exp.Train:: time 2021-04-08 03:26:55,616 | step 20500 | loss(JSD) 0.379 (0.523)
+Exp.Train:: time 2021-04-08 03:29:22,512 | step 21000 | loss(JSD) 0.363 (0.310)
+Exp.Train:: time 2021-04-08 03:31:49,238 | step 21500 | loss(JSD) 0.384 (0.287)
+Exp.Train:: time 2021-04-08 03:34:15,962 | step 22000 | loss(JSD) 0.472 (0.418)
+
+Exp.Eval:: time 2021-04-08 03:35:04,073 | step 22000 | IS 4.521 | FID 47.033 | cp 2.415 | cq 1.493
+Exp.Train:: time 2021-04-08 03:37:30,786 | step 22500 | loss(JSD) 0.403 (0.115)
+Exp.Train:: time 2021-04-08 03:39:57,424 | step 23000 | loss(JSD) 0.357 (0.583)
+Exp.Train:: time 2021-04-08 03:42:24,111 | step 23500 | loss(JSD) 0.375 (0.421)
+Exp.Train:: time 2021-04-08 03:44:50,814 | step 24000 | loss(JSD) 0.394 (0.300)
+
+Exp.Eval:: time 2021-04-08 03:45:38,964 | step 24000 | IS 4.662 | FID 46.041 | cp 0.882 | cq -0.566
+Exp.Train:: time 2021-04-08 03:48:05,677 | step 24500 | loss(JSD) 0.403 (0.643)
+Exp.Train:: time 2021-04-08 03:50:32,274 | step 25000 | loss(JSD) 0.383 (0.407)
+Exp.Train:: time 2021-04-08 03:52:58,901 | step 25500 | loss(JSD) 0.423 (0.510)
+Exp.Train:: time 2021-04-08 03:55:25,416 | step 26000 | loss(JSD) 0.433 (0.120)
+
+Exp.Eval:: time 2021-04-08 03:56:13,601 | step 26000 | IS 4.551 | FID 46.712 | cp 1.668 | cq 0.633
+Exp.Train:: time 2021-04-08 03:58:40,411 | step 26500 | loss(JSD) 0.443 (0.611)
+Exp.Train:: time 2021-04-08 04:01:07,192 | step 27000 | loss(JSD) 0.423 (0.422)
+Exp.Train:: time 2021-04-08 04:03:34,121 | step 27500 | loss(JSD) 0.417 (0.244)
+Exp.Train:: time 2021-04-08 04:06:00,961 | step 28000 | loss(JSD) 0.466 (0.205)
+
+Exp.Eval:: time 2021-04-08 04:06:49,170 | step 28000 | IS 4.630 | FID 47.090 | cp 1.429 | cq 0.439
+Exp.Train:: time 2021-04-08 04:09:16,234 | step 28500 | loss(JSD) 0.465 (0.634)
+Exp.Train:: time 2021-04-08 04:11:43,047 | step 29000 | loss(JSD) 0.424 (0.624)
+Exp.Train:: time 2021-04-08 04:14:09,787 | step 29500 | loss(JSD) 0.412 (0.650)
+Exp.Train:: time 2021-04-08 04:16:36,570 | step 30000 | loss(JSD) 0.452 (0.578)
+
+Exp.Eval:: time 2021-04-08 04:17:24,764 | step 30000 | IS 4.644 | FID 46.007 | cp 2.580 | cq 0.713
+Exp.Train:: time 2021-04-08 04:19:51,578 | step 30500 | loss(JSD) 0.429 (0.645)
+Exp.Train:: time 2021-04-08 04:22:18,374 | step 31000 | loss(JSD) 0.385 (0.545)
+Exp.Train:: time 2021-04-08 04:24:45,037 | step 31500 | loss(JSD) 0.453 (0.360)
+Exp.Train:: time 2021-04-08 04:27:11,604 | step 32000 | loss(JSD) 0.503 (0.357)
+
+Exp.Eval:: time 2021-04-08 04:27:59,828 | step 32000 | IS 4.634 | FID 46.534 | cp 1.859 | cq 0.992
+Exp.Train:: time 2021-04-08 04:30:26,680 | step 32500 | loss(JSD) 0.479 (0.675)
+Exp.Train:: time 2021-04-08 04:32:53,288 | step 33000 | loss(JSD) 0.405 (0.445)
+Exp.Train:: time 2021-04-08 04:35:19,913 | step 33500 | loss(JSD) 0.398 (0.522)
+Exp.Train:: time 2021-04-08 04:37:46,509 | step 34000 | loss(JSD) 0.418 (0.439)
+
+Exp.Eval:: time 2021-04-08 04:38:34,761 | step 34000 | IS 4.671 | FID 45.559 | cp 2.067 | cq 0.331
+Exp.Train:: time 2021-04-08 04:41:01,389 | step 34500 | loss(JSD) 0.393 (0.593)
+Exp.Train:: time 2021-04-08 04:43:27,951 | step 35000 | loss(JSD) 0.382 (0.228)
+Exp.Train:: time 2021-04-08 04:45:54,636 | step 35500 | loss(JSD) 0.419 (0.452)
+Exp.Train:: time 2021-04-08 04:48:21,146 | step 36000 | loss(JSD) 0.422 (0.498)
+
+Exp.Eval:: time 2021-04-08 04:49:09,607 | step 36000 | IS 4.671 | FID 44.047 | cp 1.922 | cq 0.238
+Exp.Train:: time 2021-04-08 04:51:36,272 | step 36500 | loss(JSD) 0.382 (0.299)
+Exp.Train:: time 2021-04-08 04:54:02,900 | step 37000 | loss(JSD) 0.421 (0.166)
+Exp.Train:: time 2021-04-08 04:56:29,494 | step 37500 | loss(JSD) 0.408 (0.141)
+Exp.Train:: time 2021-04-08 04:58:56,101 | step 38000 | loss(JSD) 0.445 (0.404)
+
+Exp.Eval:: time 2021-04-08 04:59:44,462 | step 38000 | IS 4.791 | FID 43.189 | cp 1.824 | cq 0.571
+Exp.Train:: time 2021-04-08 05:02:11,061 | step 38500 | loss(JSD) 0.383 (0.657)
+Exp.Train:: time 2021-04-08 05:04:37,539 | step 39000 | loss(JSD) 0.416 (-0.095)
+Exp.Train:: time 2021-04-08 05:07:04,138 | step 39500 | loss(JSD) 0.436 (0.614)
+Exp.Train:: time 2021-04-08 05:09:30,639 | step 40000 | loss(JSD) 0.394 (0.664)
+
+Exp.Eval:: time 2021-04-08 05:10:18,859 | step 40000 | IS 4.834 | FID 43.840 | cp 3.455 | cq 2.159
+Exp.Train:: time 2021-04-08 05:12:45,565 | step 40500 | loss(JSD) 0.417 (0.494)
+Exp.Train:: time 2021-04-08 05:15:12,292 | step 41000 | loss(JSD) 0.400 (0.628)
+Exp.Train:: time 2021-04-08 05:17:39,384 | step 41500 | loss(JSD) 0.383 (0.526)
+Exp.Train:: time 2021-04-08 05:20:06,493 | step 42000 | loss(JSD) 0.384 (0.434)
+
+Exp.Eval:: time 2021-04-08 05:20:54,695 | step 42000 | IS 4.723 | FID 42.535 | cp 2.421 | cq 0.874
+Exp.Train:: time 2021-04-08 05:23:21,396 | step 42500 | loss(JSD) 0.411 (0.368)
+Exp.Train:: time 2021-04-08 05:25:47,910 | step 43000 | loss(JSD) 0.413 (0.574)
+Exp.Train:: time 2021-04-08 05:28:14,524 | step 43500 | loss(JSD) 0.390 (0.161)
+Exp.Train:: time 2021-04-08 05:30:41,082 | step 44000 | loss(JSD) 0.429 (0.622)
+
+Exp.Eval:: time 2021-04-08 05:31:29,316 | step 44000 | IS 4.729 | FID 41.675 | cp 2.649 | cq 0.979
+Exp.Train:: time 2021-04-08 05:33:55,942 | step 44500 | loss(JSD) 0.378 (0.585)
+Exp.Train:: time 2021-04-08 05:36:22,592 | step 45000 | loss(JSD) 0.432 (0.512)
+Exp.Train:: time 2021-04-08 05:38:49,241 | step 45500 | loss(JSD) 0.407 (0.229)
+Exp.Train:: time 2021-04-08 05:41:15,898 | step 46000 | loss(JSD) 0.429 (0.328)
+
+Exp.Eval:: time 2021-04-08 05:42:04,139 | step 46000 | IS 4.847 | FID 41.883 | cp 1.753 | cq 0.163
+Exp.Train:: time 2021-04-08 05:44:30,987 | step 46500 | loss(JSD) 0.457 (0.675)
+Exp.Train:: time 2021-04-08 05:46:57,648 | step 47000 | loss(JSD) 0.426 (0.280)
+Exp.Train:: time 2021-04-08 05:49:24,156 | step 47500 | loss(JSD) 0.398 (0.211)
+Exp.Train:: time 2021-04-08 05:51:50,801 | step 48000 | loss(JSD) 0.377 (0.318)
+
+Exp.Eval:: time 2021-04-08 05:52:39,050 | step 48000 | IS 4.825 | FID 41.893 | cp 2.806 | cq 1.042
+Exp.Train:: time 2021-04-08 05:55:05,655 | step 48500 | loss(JSD) 0.385 (0.258)
+Exp.Train:: time 2021-04-08 05:57:32,439 | step 49000 | loss(JSD) 0.379 (0.446)
+Exp.Train:: time 2021-04-08 05:59:59,035 | step 49500 | loss(JSD) 0.389 (0.386)
+Exp.Train:: time 2021-04-08 06:02:25,650 | step 50000 | loss(JSD) 0.430 (0.449)
+
+Exp.Eval:: time 2021-04-08 06:03:13,953 | step 50000 | IS 4.873 | FID 42.241 | cp 2.172 | cq 0.382
+Exp.Train:: time 2021-04-08 06:05:40,570 | step 50500 | loss(JSD) 0.382 (0.267)
+Exp.Train:: time 2021-04-08 06:08:07,087 | step 51000 | loss(JSD) 0.395 (0.525)
+Exp.Train:: time 2021-04-08 06:10:33,730 | step 51500 | loss(JSD) 0.359 (0.199)
+Exp.Train:: time 2021-04-08 06:13:00,309 | step 52000 | loss(JSD) 0.415 (0.504)
+
+Exp.Eval:: time 2021-04-08 06:13:48,531 | step 52000 | IS 4.922 | FID 40.427 | cp 2.162 | cq 0.005
+Exp.Train:: time 2021-04-08 06:16:15,202 | step 52500 | loss(JSD) 0.404 (0.285)
+Exp.Train:: time 2021-04-08 06:18:41,839 | step 53000 | loss(JSD) 0.385 (0.591)
+Exp.Train:: time 2021-04-08 06:21:08,338 | step 53500 | loss(JSD) 0.390 (0.178)
+Exp.Train:: time 2021-04-08 06:23:34,887 | step 54000 | loss(JSD) 0.378 (0.657)
+
+Exp.Eval:: time 2021-04-08 06:24:23,284 | step 54000 | IS 4.908 | FID 41.282 | cp 3.040 | cq 1.390
+Exp.Train:: time 2021-04-08 06:26:49,909 | step 54500 | loss(JSD) 0.382 (0.536)
+Exp.Train:: time 2021-04-08 06:29:16,697 | step 55000 | loss(JSD) 0.384 (0.203)
+Exp.Train:: time 2021-04-08 06:31:43,229 | step 55500 | loss(JSD) 0.378 (0.545)
+Exp.Train:: time 2021-04-08 06:34:09,819 | step 56000 | loss(JSD) 0.387 (0.053)
+
+Exp.Eval:: time 2021-04-08 06:34:58,098 | step 56000 | IS 5.024 | FID 38.752 | cp 1.735 | cq 0.857
+Exp.Train:: time 2021-04-08 06:37:24,744 | step 56500 | loss(JSD) 0.371 (0.663)
+Exp.Train:: time 2021-04-08 06:39:51,356 | step 57000 | loss(JSD) 0.548 (0.675)
+Exp.Train:: time 2021-04-08 06:42:18,083 | step 57500 | loss(JSD) 0.392 (0.095)
+Exp.Train:: time 2021-04-08 06:44:44,658 | step 58000 | loss(JSD) 0.367 (0.162)
+
+Exp.Eval:: time 2021-04-08 06:45:32,957 | step 58000 | IS 4.977 | FID 40.919 | cp 1.861 | cq 0.705
+Exp.Train:: time 2021-04-08 06:47:59,656 | step 58500 | loss(JSD) 0.388 (0.587)
+Exp.Train:: time 2021-04-08 06:50:26,230 | step 59000 | loss(JSD) 0.361 (0.427)
+Exp.Train:: time 2021-04-08 06:52:52,885 | step 59500 | loss(JSD) 0.407 (0.422)
+Exp.Train:: time 2021-04-08 06:55:19,493 | step 60000 | loss(JSD) 0.468 (0.683)
+
+Exp.Eval:: time 2021-04-08 06:56:07,819 | step 60000 | IS 4.963 | FID 39.627 | cp 4.619 | cq 2.605
+Exp.Train:: time 2021-04-08 06:58:34,410 | step 60500 | loss(JSD) 0.446 (0.614)
+Exp.Train:: time 2021-04-08 07:01:00,939 | step 61000 | loss(JSD) 0.383 (0.557)
+Exp.Train:: time 2021-04-08 07:03:27,481 | step 61500 | loss(JSD) 0.380 (0.028)
+Exp.Train:: time 2021-04-08 07:05:54,226 | step 62000 | loss(JSD) 0.390 (0.556)
+
+Exp.Eval:: time 2021-04-08 07:06:42,887 | step 62000 | IS 4.969 | FID 40.153 | cp 2.451 | cq 0.225
+Exp.Train:: time 2021-04-08 07:09:09,686 | step 62500 | loss(JSD) 0.383 (0.507)
+Exp.Train:: time 2021-04-08 07:11:36,332 | step 63000 | loss(JSD) 0.410 (0.333)
+Exp.Train:: time 2021-04-08 07:14:02,902 | step 63500 | loss(JSD) 0.438 (0.220)
+Exp.Train:: time 2021-04-08 07:16:29,624 | step 64000 | loss(JSD) 0.395 (0.221)
+
+Exp.Eval:: time 2021-04-08 07:17:18,439 | step 64000 | IS 4.995 | FID 40.043 | cp 1.181 | cq -0.121
+Exp.Train:: time 2021-04-08 07:19:45,157 | step 64500 | loss(JSD) 0.407 (0.352)
+Exp.Train:: time 2021-04-08 07:22:11,928 | step 65000 | loss(JSD) 0.399 (0.524)
+Exp.Train:: time 2021-04-08 07:24:38,709 | step 65500 | loss(JSD) 0.445 (0.346)
+Exp.Train:: time 2021-04-08 07:27:05,749 | step 66000 | loss(JSD) 0.442 (0.675)
+
+Exp.Eval:: time 2021-04-08 07:27:54,319 | step 66000 | IS 5.077 | FID 39.097 | cp 4.018 | cq 2.898
+Exp.Train:: time 2021-04-08 07:30:21,182 | step 66500 | loss(JSD) 0.455 (0.206)
+Exp.Train:: time 2021-04-08 07:32:47,889 | step 67000 | loss(JSD) 0.402 (0.574)
+Exp.Train:: time 2021-04-08 07:35:14,686 | step 67500 | loss(JSD) 0.382 (0.373)
+Exp.Train:: time 2021-04-08 07:37:41,283 | step 68000 | loss(JSD) 0.367 (-0.006)
+
+Exp.Eval:: time 2021-04-08 07:38:29,819 | step 68000 | IS 4.977 | FID 38.557 | cp 1.444 | cq 0.604
+Exp.Train:: time 2021-04-08 07:40:56,390 | step 68500 | loss(JSD) 0.388 (0.641)
+Exp.Train:: time 2021-04-08 07:43:23,026 | step 69000 | loss(JSD) 0.382 (0.256)
+Exp.Train:: time 2021-04-08 07:45:49,597 | step 69500 | loss(JSD) 0.374 (0.090)
+Exp.Train:: time 2021-04-08 07:48:16,309 | step 70000 | loss(JSD) 0.411 (0.637)
+
+Exp.Eval:: time 2021-04-08 07:49:04,773 | step 70000 | IS 4.925 | FID 39.311 | cp 2.832 | cq 1.036
+Exp.Train:: time 2021-04-08 07:51:31,428 | step 70500 | loss(JSD) 0.405 (0.650)
+Exp.Train:: time 2021-04-08 07:53:57,935 | step 71000 | loss(JSD) 0.434 (-0.052)
+Exp.Train:: time 2021-04-08 07:56:24,433 | step 71500 | loss(JSD) 0.422 (0.662)
+Exp.Train:: time 2021-04-08 07:58:51,127 | step 72000 | loss(JSD) 0.377 (0.310)
+
+Exp.Eval:: time 2021-04-08 07:59:39,714 | step 72000 | IS 5.013 | FID 38.988 | cp 2.062 | cq 0.376
+Exp.Train:: time 2021-04-08 08:02:06,398 | step 72500 | loss(JSD) 0.379 (0.291)
+Exp.Train:: time 2021-04-08 08:04:32,905 | step 73000 | loss(JSD) 0.427 (0.582)
+Exp.Train:: time 2021-04-08 08:06:59,386 | step 73500 | loss(JSD) 0.369 (0.493)
+Exp.Train:: time 2021-04-08 08:09:25,834 | step 74000 | loss(JSD) 0.399 (0.033)
+
+Exp.Eval:: time 2021-04-08 08:10:14,340 | step 74000 | IS 5.138 | FID 37.378 | cp 1.862 | cq 0.604
+Exp.Train:: time 2021-04-08 08:12:40,915 | step 74500 | loss(JSD) 0.373 (0.221)
+Exp.Train:: time 2021-04-08 08:15:07,462 | step 75000 | loss(JSD) 0.375 (-0.037)
+Exp.Train:: time 2021-04-08 08:17:34,203 | step 75500 | loss(JSD) 0.369 (0.465)
+Exp.Train:: time 2021-04-08 08:20:00,656 | step 76000 | loss(JSD) 0.471 (0.501)
+
+Exp.Eval:: time 2021-04-08 08:20:49,240 | step 76000 | IS 5.012 | FID 37.171 | cp 2.037 | cq -0.687
+Exp.Train:: time 2021-04-08 08:23:15,856 | step 76500 | loss(JSD) 0.360 (0.224)
+Exp.Train:: time 2021-04-08 08:25:42,474 | step 77000 | loss(JSD) 0.357 (0.120)
+Exp.Train:: time 2021-04-08 08:28:09,036 | step 77500 | loss(JSD) 0.408 (0.024)
+Exp.Train:: time 2021-04-08 08:30:35,670 | step 78000 | loss(JSD) 0.366 (0.478)
+
+Exp.Eval:: time 2021-04-08 08:31:24,208 | step 78000 | IS 5.053 | FID 37.009 | cp 2.083 | cq 0.233
+Exp.Train:: time 2021-04-08 08:33:50,923 | step 78500 | loss(JSD) 0.344 (0.243)
+Exp.Train:: time 2021-04-08 08:36:17,599 | step 79000 | loss(JSD) 0.369 (0.647)
+Exp.Train:: time 2021-04-08 08:38:44,195 | step 79500 | loss(JSD) 0.438 (0.681)
+Exp.Train:: time 2021-04-08 08:41:10,805 | step 80000 | loss(JSD) 0.376 (0.614)
+
+Exp.Eval:: time 2021-04-08 08:41:59,371 | step 80000 | IS 5.061 | FID 36.938 | cp 2.395 | cq 0.754
+Exp.Train:: time 2021-04-08 08:44:26,039 | step 80500 | loss(JSD) 0.384 (0.154)
+Exp.Train:: time 2021-04-08 08:46:52,626 | step 81000 | loss(JSD) 0.394 (0.612)
+Exp.Train:: time 2021-04-08 08:49:19,456 | step 81500 | loss(JSD) 0.370 (0.398)
+Exp.Train:: time 2021-04-08 08:51:46,121 | step 82000 | loss(JSD) 0.405 (0.253)
+
+Exp.Eval:: time 2021-04-08 08:52:34,723 | step 82000 | IS 5.100 | FID 36.414 | cp 0.623 | cq -0.614
+Exp.Train:: time 2021-04-08 08:55:01,448 | step 82500 | loss(JSD) 0.374 (0.268)
+Exp.Train:: time 2021-04-08 08:57:28,188 | step 83000 | loss(JSD) 0.393 (0.385)
+Exp.Train:: time 2021-04-08 08:59:54,714 | step 83500 | loss(JSD) 0.345 (0.043)
+Exp.Train:: time 2021-04-08 09:02:21,285 | step 84000 | loss(JSD) 0.391 (0.240)
+
+Exp.Eval:: time 2021-04-08 09:03:09,714 | step 84000 | IS 5.167 | FID 36.699 | cp 1.739 | cq 0.429
+Exp.Train:: time 2021-04-08 09:05:36,416 | step 84500 | loss(JSD) 0.393 (0.294)
+Exp.Train:: time 2021-04-08 09:08:02,983 | step 85000 | loss(JSD) 0.373 (0.516)
+Exp.Train:: time 2021-04-08 09:10:29,548 | step 85500 | loss(JSD) 0.384 (0.201)
+Exp.Train:: time 2021-04-08 09:12:56,255 | step 86000 | loss(JSD) 0.385 (0.583)
+
+Exp.Eval:: time 2021-04-08 09:13:44,751 | step 86000 | IS 5.149 | FID 36.064 | cp 2.692 | cq 0.661
+Exp.Train:: time 2021-04-08 09:16:11,472 | step 86500 | loss(JSD) 0.374 (0.194)
+Exp.Train:: time 2021-04-08 09:18:37,954 | step 87000 | loss(JSD) 0.351 (0.486)
+Exp.Train:: time 2021-04-08 09:21:04,576 | step 87500 | loss(JSD) 0.369 (0.553)
+Exp.Train:: time 2021-04-08 09:23:31,244 | step 88000 | loss(JSD) 0.337 (0.422)
+
+Exp.Eval:: time 2021-04-08 09:24:19,720 | step 88000 | IS 5.130 | FID 36.520 | cp 1.989 | cq 0.215
+Exp.Train:: time 2021-04-08 09:26:46,428 | step 88500 | loss(JSD) 0.356 (0.539)
+Exp.Train:: time 2021-04-08 09:29:13,439 | step 89000 | loss(JSD) 0.356 (0.335)
+Exp.Train:: time 2021-04-08 09:31:40,416 | step 89500 | loss(JSD) 0.379 (0.185)
+Exp.Train:: time 2021-04-08 09:34:07,434 | step 90000 | loss(JSD) 0.350 (0.089)
+
+Exp.Eval:: time 2021-04-08 09:34:55,884 | step 90000 | IS 5.219 | FID 35.179 | cp 1.908 | cq 0.781
+Exp.Train:: time 2021-04-08 09:37:22,482 | step 90500 | loss(JSD) 0.345 (0.279)
+Exp.Train:: time 2021-04-08 09:39:48,985 | step 91000 | loss(JSD) 0.362 (0.378)
+Exp.Train:: time 2021-04-08 09:42:15,644 | step 91500 | loss(JSD) 0.359 (0.325)
+Exp.Train:: time 2021-04-08 09:44:42,167 | step 92000 | loss(JSD) 0.348 (0.258)
+
+Exp.Eval:: time 2021-04-08 09:45:30,593 | step 92000 | IS 5.163 | FID 35.243 | cp 1.790 | cq 0.298
+Exp.Train:: time 2021-04-08 09:47:57,162 | step 92500 | loss(JSD) 0.342 (0.246)
+Exp.Train:: time 2021-04-08 09:50:23,824 | step 93000 | loss(JSD) 0.352 (0.318)
+Exp.Train:: time 2021-04-08 09:52:50,533 | step 93500 | loss(JSD) 0.347 (0.161)
+Exp.Train:: time 2021-04-08 09:55:17,170 | step 94000 | loss(JSD) 0.333 (0.413)
+
+Exp.Eval:: time 2021-04-08 09:56:05,550 | step 94000 | IS 5.152 | FID 35.060 | cp 1.523 | cq 0.325
+Exp.Train:: time 2021-04-08 09:58:32,170 | step 94500 | loss(JSD) 0.339 (0.373)
+Exp.Train:: time 2021-04-08 10:00:58,706 | step 95000 | loss(JSD) 0.376 (0.266)
+Exp.Train:: time 2021-04-08 10:03:25,366 | step 95500 | loss(JSD) 0.332 (0.408)
+Exp.Train:: time 2021-04-08 10:05:51,949 | step 96000 | loss(JSD) 0.345 (0.216)
+
+Exp.Eval:: time 2021-04-08 10:06:40,292 | step 96000 | IS 5.179 | FID 34.626 | cp 1.383 | cq -0.098
+Exp.Train:: time 2021-04-08 10:09:06,997 | step 96500 | loss(JSD) 0.344 (0.157)
+Exp.Train:: time 2021-04-08 10:11:33,652 | step 97000 | loss(JSD) 0.351 (0.526)
+Exp.Train:: time 2021-04-08 10:14:00,275 | step 97500 | loss(JSD) 0.365 (0.038)
+Exp.Train:: time 2021-04-08 10:16:26,751 | step 98000 | loss(JSD) 0.343 (0.185)
+
+Exp.Eval:: time 2021-04-08 10:17:15,059 | step 98000 | IS 5.275 | FID 34.021 | cp 1.864 | cq 0.379
+Exp.Train:: time 2021-04-08 10:19:41,742 | step 98500 | loss(JSD) 0.349 (0.581)
+Exp.Train:: time 2021-04-08 10:22:08,359 | step 99000 | loss(JSD) 0.358 (0.636)
+Exp.Train:: time 2021-04-08 10:24:35,051 | step 99500 | loss(JSD) 0.354 (0.474)
+Exp.Train:: time 2021-04-08 10:27:01,595 | step 100000 | loss(JSD) 0.361 (0.314)
+
+Exp.Eval:: time 2021-04-08 10:27:50,202 | step 100000 | IS 5.335 | FID 35.242 | cp 1.325 | cq 0.042
+Exp:: time 2021-04-08 10:27:50,227 | Final Evaluation
+Exp:: time 2021-04-08 10:28:37,963 | step 100000 | IS 5.250 | FID 34.526 | cp 1.325 | cq 0.029
+
+** cifar jsd 3
+Exp:: time 2021-04-08 14:21:37,152 | Generator:
+Generator(
+  (decoder): Sequential(
+    (0): ConvTranspose2d(100, 512, kernel_size=(4, 4), stride=(1, 1))
+    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+        (4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU(inplace=True)
+      )
+    )
+    (4): ConvTranspose2d(512, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU(inplace=True)
+      )
+    )
+    (8): ConvTranspose2d(256, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (9): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU(inplace=True)
+      )
+    )
+    (12): ConvTranspose2d(128, 3, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (13): Tanh()
+  )
+)
+Exp:: time 2021-04-08 14:21:37,269 | Critic:
+Critic(
+  (encoder): Sequential(
+    (0): Conv2d(3, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (1): LeakyReLU(negative_slope=0.2, inplace=True)
+    (2): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+        (2): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+        (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (3): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (4): LeakyReLU(negative_slope=0.2, inplace=True)
+    (5): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+        (2): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+        (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (6): Conv2d(256, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    (8): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+        (2): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+        (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (9): Conv2d(512, 1, kernel_size=(4, 4), stride=(1, 1))
+  )
+)
+Exp:: time 2021-04-08 14:21:37,942 | Training
+Exp.Train:: time 2021-04-08 14:24:53,985 | step 500 | loss(JSD) 0.653 (0.692)
+Exp.Train:: time 2021-04-08 14:28:07,037 | step 1000 | loss(JSD) 0.659 (0.693)
+Exp.Train:: time 2021-04-08 14:31:20,069 | step 1500 | loss(JSD) 0.693 (0.693)
+Exp.Train:: time 2021-04-08 14:34:47,478 | step 2000 | loss(JSD) 0.692 (0.693)
+
+Exp.Eval:: time 2021-04-08 14:35:46,336 | step 2000 | IS 1.895 | FID 391.813 | cp 10.359 | cq -31.913
+Exp.Train:: time 2021-04-08 14:39:25,379 | step 2500 | loss(JSD) 0.692 (0.693)
+Exp.Train:: time 2021-04-08 14:42:52,941 | step 3000 | loss(JSD) 0.686 (0.693)
+Exp.Train:: time 2021-04-08 14:46:27,063 | step 3500 | loss(JSD) 0.691 (0.693)
+Exp.Train:: time 2021-04-08 14:50:01,421 | step 4000 | loss(JSD) 0.632 (0.582)
+
+Exp.Eval:: time 2021-04-08 14:50:57,008 | step 4000 | IS 2.722 | FID 345.740 | cp 2.776 | cq -18.975
+Exp.Train:: time 2021-04-08 14:54:14,136 | step 4500 | loss(JSD) 0.668 (0.604)
+Exp.Train:: time 2021-04-08 14:57:29,557 | step 5000 | loss(JSD) 0.660 (0.674)
+Exp.Train:: time 2021-04-08 15:00:45,167 | step 5500 | loss(JSD) 0.656 (0.672)
+Exp.Train:: time 2021-04-08 15:03:56,832 | step 6000 | loss(JSD) 0.653 (0.635)
+
+Exp.Eval:: time 2021-04-08 15:04:45,621 | step 6000 | IS 2.932 | FID 179.114 | cp 3.255 | cq -5.894
+Exp.Train:: time 2021-04-08 15:08:09,533 | step 6500 | loss(JSD) 0.651 (0.666)
+Exp.Train:: time 2021-04-08 15:11:23,070 | step 7000 | loss(JSD) 0.634 (0.669)
+Exp.Train:: time 2021-04-08 15:14:42,656 | step 7500 | loss(JSD) 0.619 (0.643)
+Exp.Train:: time 2021-04-08 15:17:58,962 | step 8000 | loss(JSD) 0.581 (0.440)
+
+Exp.Eval:: time 2021-04-08 15:18:48,651 | step 8000 | IS 2.806 | FID 122.871 | cp 4.031 | cq -0.395
+Exp.Train:: time 2021-04-08 15:22:02,288 | step 8500 | loss(JSD) 0.538 (0.600)
+Exp.Train:: time 2021-04-08 15:25:15,613 | step 9000 | loss(JSD) 0.493 (0.482)
+Exp.Train:: time 2021-04-08 15:28:24,828 | step 9500 | loss(JSD) 0.474 (0.411)
+Exp.Train:: time 2021-04-08 15:31:34,088 | step 10000 | loss(JSD) 0.461 (0.497)
+
+Exp.Eval:: time 2021-04-08 15:32:22,692 | step 10000 | IS 3.651 | FID 91.369 | cp 2.518 | cq -1.407
+Exp.Train:: time 2021-04-08 15:35:32,230 | step 10500 | loss(JSD) 0.444 (0.372)
+Exp.Train:: time 2021-04-08 15:38:41,674 | step 11000 | loss(JSD) 0.421 (0.425)
+Exp.Train:: time 2021-04-08 15:41:51,177 | step 11500 | loss(JSD) 0.402 (0.375)
+Exp.Train:: time 2021-04-08 15:45:00,713 | step 12000 | loss(JSD) 0.380 (0.403)
+
+Exp.Eval:: time 2021-04-08 15:45:49,338 | step 12000 | IS 4.421 | FID 57.315 | cp 1.383 | cq -1.328
+Exp.Train:: time 2021-04-08 15:48:58,942 | step 12500 | loss(JSD) 0.369 (0.380)
+Exp.Train:: time 2021-04-08 15:52:08,392 | step 13000 | loss(JSD) 0.355 (0.325)
+Exp.Train:: time 2021-04-08 15:55:17,967 | step 13500 | loss(JSD) 0.345 (0.312)
+Exp.Train:: time 2021-04-08 15:58:27,475 | step 14000 | loss(JSD) 0.344 (0.306)
+
+Exp.Eval:: time 2021-04-08 15:59:16,419 | step 14000 | IS 4.845 | FID 45.659 | cp 2.087 | cq 0.225
+Exp.Train:: time 2021-04-08 16:02:38,565 | step 14500 | loss(JSD) 0.336 (0.405)
+Exp.Train:: time 2021-04-08 16:05:53,708 | step 15000 | loss(JSD) 0.325 (0.401)
+Exp.Train:: time 2021-04-08 16:09:09,060 | step 15500 | loss(JSD) 0.323 (0.291)
+Exp.Train:: time 2021-04-08 16:12:23,917 | step 16000 | loss(JSD) 0.318 (0.330)
+
+Exp.Eval:: time 2021-04-08 16:13:19,920 | step 16000 | IS 5.336 | FID 40.314 | cp 1.503 | cq -0.077
+Exp.Train:: time 2021-04-08 16:16:46,600 | step 16500 | loss(JSD) 0.316 (0.276)
+Exp.Train:: time 2021-04-08 16:20:01,718 | step 17000 | loss(JSD) 0.316 (0.321)
+Exp.Train:: time 2021-04-08 16:23:15,244 | step 17500 | loss(JSD) 0.317 (0.272)
+Exp.Train:: time 2021-04-08 16:26:28,835 | step 18000 | loss(JSD) 0.315 (0.341)
+
+Exp.Eval:: time 2021-04-08 16:27:17,872 | step 18000 | IS 5.619 | FID 36.205 | cp 1.175 | cq -0.501
+Exp.Train:: time 2021-04-08 16:30:27,176 | step 18500 | loss(JSD) 0.321 (0.335)
+Exp.Train:: time 2021-04-08 16:33:36,498 | step 19000 | loss(JSD) 0.318 (0.350)
+Exp.Train:: time 2021-04-08 16:36:45,835 | step 19500 | loss(JSD) 0.321 (0.347)
+Exp.Train:: time 2021-04-08 16:39:55,213 | step 20000 | loss(JSD) 0.329 (0.229)
+
+Exp.Eval:: time 2021-04-08 16:40:43,387 | step 20000 | IS 5.704 | FID 34.433 | cp 1.590 | cq 0.068
+Exp.Train:: time 2021-04-08 16:43:52,561 | step 20500 | loss(JSD) 0.338 (0.260)
+Exp.Train:: time 2021-04-08 16:47:01,697 | step 21000 | loss(JSD) 0.343 (0.334)
+Exp.Train:: time 2021-04-08 16:50:10,791 | step 21500 | loss(JSD) 0.347 (0.329)
+Exp.Train:: time 2021-04-08 16:53:27,185 | step 22000 | loss(JSD) 0.358 (0.366)
+
+Exp.Eval:: time 2021-04-08 16:54:19,002 | step 22000 | IS 5.767 | FID 32.733 | cp 0.058 | cq -1.773
+Exp.Train:: time 2021-04-08 16:57:37,586 | step 22500 | loss(JSD) 0.363 (0.438)
+Exp.Train:: time 2021-04-08 17:00:52,503 | step 23000 | loss(JSD) 0.375 (0.402)
+Exp.Train:: time 2021-04-08 17:04:09,855 | step 23500 | loss(JSD) 0.378 (0.421)
+Exp.Train:: time 2021-04-08 17:07:27,278 | step 24000 | loss(JSD) 0.376 (0.376)
+
+Exp.Eval:: time 2021-04-08 17:08:20,924 | step 24000 | IS 6.004 | FID 30.534 | cp 0.661 | cq -1.073
+Exp.Train:: time 2021-04-08 17:11:43,917 | step 24500 | loss(JSD) 0.386 (0.344)
+Exp.Train:: time 2021-04-08 17:14:57,830 | step 25000 | loss(JSD) 0.390 (0.385)
+Exp.Train:: time 2021-04-08 17:18:11,691 | step 25500 | loss(JSD) 0.398 (0.440)
+Exp.Train:: time 2021-04-08 17:21:28,514 | step 26000 | loss(JSD) 0.403 (0.476)
+
+Exp.Eval:: time 2021-04-08 17:22:21,378 | step 26000 | IS 5.997 | FID 30.228 | cp 0.904 | cq -0.835
+Exp.Train:: time 2021-04-08 17:25:34,867 | step 26500 | loss(JSD) 0.408 (0.348)
+Exp.Train:: time 2021-04-08 17:29:03,704 | step 27000 | loss(JSD) 0.416 (0.448)
+Exp.Train:: time 2021-04-08 17:32:47,269 | step 27500 | loss(JSD) 0.422 (0.406)
+Exp.Train:: time 2021-04-08 17:36:32,439 | step 28000 | loss(JSD) 0.428 (0.412)
+
+Exp.Eval:: time 2021-04-08 17:37:27,767 | step 28000 | IS 6.125 | FID 28.373 | cp 0.948 | cq -0.732
+Exp.Train:: time 2021-04-08 17:40:41,495 | step 28500 | loss(JSD) 0.433 (0.444)
+Exp.Train:: time 2021-04-08 17:43:55,107 | step 29000 | loss(JSD) 0.443 (0.492)
+Exp.Train:: time 2021-04-08 17:47:08,663 | step 29500 | loss(JSD) 0.448 (0.486)
+Exp.Train:: time 2021-04-08 17:50:18,184 | step 30000 | loss(JSD) 0.442 (0.342)
+
+Exp.Eval:: time 2021-04-08 17:51:06,506 | step 30000 | IS 5.948 | FID 27.157 | cp 1.486 | cq -0.119
+Exp.Train:: time 2021-04-08 17:54:15,869 | step 30500 | loss(JSD) 0.456 (0.501)
+Exp.Train:: time 2021-04-08 17:57:25,170 | step 31000 | loss(JSD) 0.451 (0.468)
+Exp.Train:: time 2021-04-08 18:00:34,423 | step 31500 | loss(JSD) 0.454 (0.432)
+Exp.Train:: time 2021-04-08 18:03:43,703 | step 32000 | loss(JSD) 0.464 (0.280)
+
+Exp.Eval:: time 2021-04-08 18:04:32,387 | step 32000 | IS 6.165 | FID 25.427 | cp 1.816 | cq 0.347
+Exp.Train:: time 2021-04-08 18:07:41,577 | step 32500 | loss(JSD) 0.465 (0.496)
+Exp.Train:: time 2021-04-08 18:10:50,729 | step 33000 | loss(JSD) 0.470 (0.497)
+Exp.Train:: time 2021-04-08 18:13:59,955 | step 33500 | loss(JSD) 0.477 (0.513)
+Exp.Train:: time 2021-04-08 18:17:09,257 | step 34000 | loss(JSD) 0.478 (0.465)
+
+Exp.Eval:: time 2021-04-08 18:17:58,068 | step 34000 | IS 6.082 | FID 25.875 | cp 0.104 | cq -1.495
+Exp.Train:: time 2021-04-08 18:21:07,423 | step 34500 | loss(JSD) 0.487 (0.476)
+Exp.Train:: time 2021-04-08 18:24:25,711 | step 35000 | loss(JSD) 0.493 (0.510)
+Exp.Train:: time 2021-04-08 18:27:46,112 | step 35500 | loss(JSD) 0.493 (0.523)
+Exp.Train:: time 2021-04-08 18:31:06,510 | step 36000 | loss(JSD) 0.498 (0.548)
+
+Exp.Eval:: time 2021-04-08 18:31:59,511 | step 36000 | IS 6.170 | FID 26.593 | cp -0.023 | cq -1.843
+Exp.Train:: time 2021-04-08 18:35:16,958 | step 36500 | loss(JSD) 0.500 (0.536)
+Exp.Train:: time 2021-04-08 18:38:35,149 | step 37000 | loss(JSD) 0.501 (0.544)
+Exp.Train:: time 2021-04-08 18:41:52,356 | step 37500 | loss(JSD) 0.501 (0.465)
+Exp.Train:: time 2021-04-08 18:45:15,707 | step 38000 | loss(JSD) 0.495 (0.526)
+
+Exp.Eval:: time 2021-04-08 18:46:08,393 | step 38000 | IS 6.044 | FID 24.481 | cp -0.208 | cq -1.980
+Exp.Train:: time 2021-04-08 18:49:29,645 | step 38500 | loss(JSD) 0.504 (0.555)
+Exp.Train:: time 2021-04-08 18:52:54,797 | step 39000 | loss(JSD) 0.515 (0.455)
+Exp.Train:: time 2021-04-08 18:56:20,636 | step 39500 | loss(JSD) 0.511 (0.450)
+Exp.Train:: time 2021-04-08 18:59:34,215 | step 40000 | loss(JSD) 0.521 (0.525)
+
+Exp.Eval:: time 2021-04-08 19:00:23,739 | step 40000 | IS 6.114 | FID 24.555 | cp -0.054 | cq -1.935
+Exp.Train:: time 2021-04-08 19:03:37,554 | step 40500 | loss(JSD) 0.522 (0.542)
+Exp.Train:: time 2021-04-08 19:07:01,689 | step 41000 | loss(JSD) 0.520 (0.510)
+Exp.Train:: time 2021-04-08 19:10:46,992 | step 41500 | loss(JSD) 0.526 (0.521)
+Exp.Train:: time 2021-04-08 19:14:32,376 | step 42000 | loss(JSD) 0.525 (0.525)
+
+Exp.Eval:: time 2021-04-08 19:15:33,247 | step 42000 | IS 6.179 | FID 24.627 | cp -0.921 | cq -2.663
+Exp.Train:: time 2021-04-08 19:19:13,349 | step 42500 | loss(JSD) 0.530 (0.433)
+Exp.Train:: time 2021-04-08 19:22:31,641 | step 43000 | loss(JSD) 0.529 (0.501)
+Exp.Train:: time 2021-04-08 19:25:45,472 | step 43500 | loss(JSD) 0.531 (0.559)
+Exp.Train:: time 2021-04-08 19:28:59,264 | step 44000 | loss(JSD) 0.530 (0.535)
+
+Exp.Eval:: time 2021-04-08 19:29:48,934 | step 44000 | IS 6.016 | FID 25.168 | cp -0.055 | cq -1.845
+Exp.Train:: time 2021-04-08 19:32:58,641 | step 44500 | loss(JSD) 0.535 (0.503)
+Exp.Train:: time 2021-04-08 19:36:07,749 | step 45000 | loss(JSD) 0.540 (0.518)
+Exp.Train:: time 2021-04-08 19:39:16,695 | step 45500 | loss(JSD) 0.540 (0.562)
+Exp.Train:: time 2021-04-08 19:42:25,786 | step 46000 | loss(JSD) 0.542 (0.531)
+
+Exp.Eval:: time 2021-04-08 19:43:14,372 | step 46000 | IS 5.960 | FID 25.441 | cp -0.726 | cq -2.454
+Exp.Train:: time 2021-04-08 19:46:30,674 | step 46500 | loss(JSD) 0.544 (0.544)
+Exp.Train:: time 2021-04-08 19:49:44,131 | step 47000 | loss(JSD) 0.545 (0.557)
+Exp.Train:: time 2021-04-08 19:53:05,190 | step 47500 | loss(JSD) 0.546 (0.561)
+Exp.Train:: time 2021-04-08 19:56:37,081 | step 48000 | loss(JSD) 0.552 (0.577)
+
+Exp.Eval:: time 2021-04-08 19:57:30,459 | step 48000 | IS 5.940 | FID 24.027 | cp -0.442 | cq -2.200
+Exp.Train:: time 2021-04-08 20:00:46,413 | step 48500 | loss(JSD) 0.552 (0.547)
+Exp.Train:: time 2021-04-08 20:03:59,834 | step 49000 | loss(JSD) 0.555 (0.603)
+Exp.Train:: time 2021-04-08 20:07:15,215 | step 49500 | loss(JSD) 0.555 (0.510)
+Exp.Train:: time 2021-04-08 20:10:59,840 | step 50000 | loss(JSD) 0.556 (0.549)
+
+Exp.Eval:: time 2021-04-08 20:11:52,330 | step 50000 | IS 5.993 | FID 25.932 | cp -0.286 | cq -2.005
+
+** cifar w1 2
+Exp:: time 2021-04-08 18:48:21,924 | Using CUDA device: 0
+Exp:: time 2021-04-08 18:48:21,927 | Default floating precision: torch.float32
+Exp:: time 2021-04-08 18:48:22,400 | Initializing experiment `cifar10-w1-2` with hyperparameters:
+Hyperparameters(task='CIFAR10', batch_size=64, seed=991440, dirac_target=0.0, generator_dimz=100, generator_dimh=128, generator_alpha_ema=0.998, critic_dimh=128, critic_use_sn=True, optimizer='Adam', generator_lr=0.0002, generator_betas=(0.0, 0.99), generator_wd=0.0, critic_lr=0.0004, critic_betas=(0.0, 0.99), critic_wd=1e-06, loss_type='W1', critic_reg_type=None, critic_reg_cf=0.1, critic_inner_iters=2, max_iters=50000)
+
+Files already downloaded and verified
+Files already downloaded and verified
+
+Exp:: time 2021-04-08 18:48:47,934 | Generator:
+Generator(
+  (decoder): Sequential(
+    (0): ConvTranspose2d(100, 512, kernel_size=(4, 4), stride=(1, 1))
+    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+        (4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU(inplace=True)
+      )
+    )
+    (4): ConvTranspose2d(512, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+        (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU(inplace=True)
+      )
+    )
+    (8): ConvTranspose2d(256, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (9): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): ReLU(inplace=True)
+    (11): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace=True)
+        (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+        (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU(inplace=True)
+      )
+    )
+    (12): ConvTranspose2d(128, 3, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (13): Tanh()
+  )
+)
+Exp:: time 2021-04-08 18:48:47,993 | Critic:
+Critic(
+  (encoder): Sequential(
+    (0): Conv2d(3, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (1): LeakyReLU(negative_slope=0.2, inplace=True)
+    (2): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+        (2): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+        (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (3): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (4): LeakyReLU(negative_slope=0.2, inplace=True)
+    (5): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+        (2): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+        (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (6): Conv2d(256, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+    (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    (8): ResBlock(
+      (block): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): LeakyReLU(negative_slope=0.2, inplace=True)
+        (2): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1))
+        (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (9): Conv2d(512, 1, kernel_size=(4, 4), stride=(1, 1))
+  )
+)
+Downloading: "https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth" to /root/.cache/torch/hub/checkpoints/inception_v3_google-1a9a5a14.pth
+
+100%
+104M/104M [00:02<00:00, 50.8MB/s]
+
+Exp:: time 2021-04-08 18:48:50,720 | Training
+
+
+Exp.Train:: time 2021-04-08 18:51:16,293 | step 500 | loss(W1) 9.255 (5.803)
+Exp.Train:: time 2021-04-08 18:53:48,077 | step 1000 | loss(W1) 7.524 (5.782)
+Exp.Train:: time 2021-04-08 18:56:20,276 | step 1500 | loss(W1) 5.969 (4.294)
+Exp.Train:: time 2021-04-08 18:58:52,415 | step 2000 | loss(W1) 4.542 (3.963)
+
+Exp.Eval:: time 2021-04-08 19:00:04,406 | step 2000 | IS 2.506 | FID 142.136 | cp 211.160 | cq 208.907
+Exp.Train:: time 2021-04-08 19:02:34,180 | step 2500 | loss(W1) 4.303 (5.664)
+Exp.Train:: time 2021-04-08 19:05:04,778 | step 3000 | loss(W1) 3.624 (4.374)
+Exp.Train:: time 2021-04-08 19:07:35,661 | step 3500 | loss(W1) 3.358 (5.490)
+Exp.Train:: time 2021-04-08 19:10:06,573 | step 4000 | loss(W1) 3.239 (0.852)
+
+Exp.Eval:: time 2021-04-08 19:11:16,274 | step 4000 | IS 2.979 | FID 100.504 | cp 482.335 | cq 481.525
+Exp.Train:: time 2021-04-08 19:13:46,129 | step 4500 | loss(W1) 3.381 (2.747)
+Exp.Train:: time 2021-04-08 19:16:16,510 | step 5000 | loss(W1) 3.174 (0.609)
+Exp.Train:: time 2021-04-08 19:18:47,134 | step 5500 | loss(W1) 3.156 (0.941)
+Exp.Train:: time 2021-04-08 19:21:17,625 | step 6000 | loss(W1) 3.173 (0.179)
+
+Exp.Eval:: time 2021-04-08 19:22:27,400 | step 6000 | IS 3.445 | FID 89.831 | cp 1189.661 | cq 1189.197
+Exp.Train:: time 2021-04-08 19:24:56,953 | step 6500 | loss(W1) 3.631 (2.134)
+Exp.Train:: time 2021-04-08 19:27:27,505 | step 7000 | loss(W1) 2.701 (0.983)
+Exp.Train:: time 2021-04-08 19:29:58,720 | step 7500 | loss(W1) 3.196 (0.770)
+Exp.Train:: time 2021-04-08 19:32:30,002 | step 8000 | loss(W1) 3.257 (0.433)
+
+Exp.Eval:: time 2021-04-08 19:33:39,746 | step 8000 | IS 3.590 | FID 87.869 | cp 2131.117 | cq 2130.942
+Exp.Train:: time 2021-04-08 19:36:09,470 | step 8500 | loss(W1) 2.540 (0.691)
+Exp.Train:: time 2021-04-08 19:38:40,100 | step 9000 | loss(W1) 2.707 (0.142)
+Exp.Train:: time 2021-04-08 19:41:11,468 | step 9500 | loss(W1) 2.437 (1.030)
+Exp.Train:: time 2021-04-08 19:43:42,893 | step 10000 | loss(W1) 4.764 (1.380)
+
+Exp.Eval:: time 2021-04-08 19:44:52,668 | step 10000 | IS 3.540 | FID 90.953 | cp 5113.855 | cq 5113.966
+Exp.Train:: time 2021-04-08 19:47:22,513 | step 10500 | loss(W1) 4.801 (0.931)
+Exp.Train:: time 2021-04-08 19:49:53,556 | step 11000 | loss(W1) 4.741 (-3.013)
+Exp.Train:: time 2021-04-08 19:52:24,459 | step 11500 | loss(W1) 4.152 (3.035)
+Exp.Train:: time 2021-04-08 19:54:54,846 | step 12000 | loss(W1) 4.687 (4.567)
+
+Exp.Eval:: time 2021-04-08 19:56:04,473 | step 12000 | IS 3.457 | FID 92.340 | cp 8371.380 | cq 8371.342
+Exp.Train:: time 2021-04-08 19:58:33,831 | step 12500 | loss(W1) 4.456 (1.945)
+Exp.Train:: time 2021-04-08 20:01:04,398 | step 13000 | loss(W1) 4.826 (11.902)
+Exp.Train:: time 2021-04-08 20:03:35,334 | step 13500 | loss(W1) 5.689 (2.176)
+Exp.Train:: time 2021-04-08 20:06:05,917 | step 14000 | loss(W1) 6.145 (27.509)
+
+Exp.Eval:: time 2021-04-08 20:07:15,593 | step 14000 | IS 3.285 | FID 91.591 | cp 14866.669 | cq 14866.887
+Exp.Train:: time 2021-04-08 20:09:45,381 | step 14500 | loss(W1) 5.890 (3.982)
+Exp.Train:: time 2021-04-08 20:12:15,885 | step 15000 | loss(W1) 7.459 (7.607)
+Exp.Train:: time 2021-04-08 20:14:46,402 | step 15500 | loss(W1) 7.586 (20.070)
+Exp.Train:: time 2021-04-08 20:17:16,519 | step 16000 | loss(W1) 6.348 (6.582)
+
+Exp.Eval:: time 2021-04-08 20:18:26,010 | step 16000 | IS 3.249 | FID 95.473 | cp 17065.939 | cq 17066.312
+Exp.Train:: time 2021-04-08 20:20:55,141 | step 16500 | loss(W1) 7.821 (22.916)
+Exp.Train:: time 2021-04-08 20:23:26,335 | step 17000 | loss(W1) 10.908 (1.115)
+Exp.Train:: time 2021-04-08 20:25:56,952 | step 17500 | loss(W1) 11.573 (15.242)
+Exp.Train:: time 2021-04-08 20:28:27,444 | step 18000 | loss(W1) 11.060 (11.420)
+
+Exp.Eval:: time 2021-04-08 20:29:37,254 | step 18000 | IS 3.206 | FID 91.868 | cp 32056.439 | cq 32056.305
+Exp.Train:: time 2021-04-08 20:32:08,573 | step 18500 | loss(W1) 9.238 (11.037)
+Exp.Train:: time 2021-04-08 20:34:38,792 | step 19000 | loss(W1) 9.014 (4.033)
+Exp.Train:: time 2021-04-08 20:37:07,055 | step 19500 | loss(W1) 12.891 (9.977)
+Exp.Train:: time 2021-04-08 20:39:35,063 | step 20000 | loss(W1) 12.792 (60.629)
+
+Exp.Eval:: time 2021-04-08 20:40:43,790 | step 20000 | IS 3.342 | FID 92.538 | cp 47733.832 | cq 47733.512
+Exp.Train:: time 2021-04-08 20:43:11,404 | step 20500 | loss(W1) 8.738 (1.020)
+Exp.Train:: time 2021-04-08 20:45:39,851 | step 21000 | loss(W1) 12.145 (2.602)
+Exp.Train:: time 2021-04-08 20:48:08,015 | step 21500 | loss(W1) 10.791 (33.281)
+Exp.Train:: time 2021-04-08 20:50:36,185 | step 22000 | loss(W1) 13.821 (8.691)
+
+Exp.Eval:: time 2021-04-08 20:51:44,871 | step 22000 | IS 3.450 | FID 98.407 | cp 53957.680 | cq 53957.090
+Exp.Train:: time 2021-04-08 20:54:12,299 | step 22500 | loss(W1) 11.114 (11.668)
+Exp.Train:: time 2021-04-08 20:56:40,461 | step 23000 | loss(W1) 13.401 (6.379)
+Exp.Train:: time 2021-04-08 20:59:08,819 | step 23500 | loss(W1) 14.132 (29.508)
+Exp.Train:: time 2021-04-08 21:01:36,994 | step 24000 | loss(W1) 14.444 (2.977)
+
+Exp.Eval:: time 2021-04-08 21:02:45,863 | step 24000 | IS 3.277 | FID 103.807 | cp 62977.570 | cq 62978.047
+Exp.Train:: time 2021-04-08 21:05:13,104 | step 24500 | loss(W1) 10.500 (7.887)
+Exp.Train:: time 2021-04-08 21:07:41,040 | step 25000 | loss(W1) 16.759 (32.820)
+Exp.Train:: time 2021-04-08 21:10:09,392 | step 25500 | loss(W1) 13.427 (5.484)
+Exp.Train:: time 2021-04-08 21:12:37,808 | step 26000 | loss(W1) 10.127 (9.469)
+
+Exp.Eval:: time 2021-04-08 21:13:46,753 | step 26000 | IS 3.075 | FID 105.262 | cp 56000.109 | cq 56000.172
+Exp.Train:: time 2021-04-08 21:16:14,460 | step 26500 | loss(W1) 12.869 (19.297)
+Exp.Train:: time 2021-04-08 21:18:42,658 | step 27000 | loss(W1) 15.444 (11.531)
+Exp.Train:: time 2021-04-08 21:21:10,683 | step 27500 | loss(W1) 12.295 (5.609)
+Exp.Train:: time 2021-04-08 21:23:38,559 | step 28000 | loss(W1) 12.843 (17.477)
+
+Exp.Eval:: time 2021-04-08 21:24:47,082 | step 28000 | IS 2.930 | FID 111.300 | cp 74722.672 | cq 74722.312
+Exp.Train:: time 2021-04-08 21:27:14,205 | step 28500 | loss(W1) 13.017 (5.977)
+Exp.Train:: time 2021-04-08 21:29:43,529 | step 29000 | loss(W1) 13.024 (16.195)
+Exp.Train:: time 2021-04-08 21:32:14,355 | step 29500 | loss(W1) 15.932 (11.344)
+Exp.Train:: time 2021-04-08 21:34:45,711 | step 30000 | loss(W1) 16.687 (19.312)
+
+Exp.Eval:: time 2021-04-08 21:35:55,846 | step 30000 | IS 2.957 | FID 113.089 | cp 100576.297 | cq 100576.211
+Exp.Train:: time 2021-04-08 21:38:25,828 | step 30500 | loss(W1) 14.488 (9.062)
+Exp.Train:: time 2021-04-08 21:40:56,127 | step 31000 | loss(W1) 13.979 (12.258)
+Exp.Train:: time 2021-04-08 21:43:26,477 | step 31500 | loss(W1) 13.847 (14.602)
+Exp.Train:: time 2021-04-08 21:45:56,819 | step 32000 | loss(W1) 15.227 (6.055)
+
+Exp.Eval:: time 2021-04-08 21:47:06,604 | step 32000 | IS 2.844 | FID 115.753 | cp 99938.203 | cq 99937.844
+Exp.Train:: time 2021-04-08 21:49:35,805 | step 32500 | loss(W1) 14.010 (15.492)
+Exp.Train:: time 2021-04-08 21:52:05,596 | step 33000 | loss(W1) 11.713 (9.344)
+Exp.Train:: time 2021-04-08 21:54:35,699 | step 33500 | loss(W1) 13.520 (16.656)
+Exp.Train:: time 2021-04-08 21:57:06,394 | step 34000 | loss(W1) 16.796 (10.211)
+
+Exp.Eval:: time 2021-04-08 21:58:16,282 | step 34000 | IS 3.096 | FID 120.305 | cp 119815.438 | cq 119815.734
+Exp.Train:: time 2021-04-08 22:00:47,139 | step 34500 | loss(W1) 18.191 (13.922)
+Exp.Train:: time 2021-04-08 22:03:18,268 | step 35000 | loss(W1) 17.284 (22.781)
+Exp.Train:: time 2021-04-08 22:05:49,631 | step 35500 | loss(W1) 12.496 (11.953)
+Exp.Train:: time 2021-04-08 22:08:20,550 | step 36000 | loss(W1) 14.690 (24.422)
+
+Exp.Eval:: time 2021-04-08 22:09:30,618 | step 36000 | IS 3.197 | FID 143.276 | cp 124315.102 | cq 124315.062
+Exp.Train:: time 2021-04-08 22:11:59,927 | step 36500 | loss(W1) 15.171 (14.273)
+Exp.Train:: time 2021-04-08 22:14:29,796 | step 37000 | loss(W1) 15.295 (9.078)
+Exp.Train:: time 2021-04-08 22:16:59,974 | step 37500 | loss(W1) 15.536 (20.031)
+Exp.Train:: time 2021-04-08 22:19:30,028 | step 38000 | loss(W1) 17.105 (16.875)
+
+Exp.Eval:: time 2021-04-08 22:20:39,680 | step 38000 | IS 2.928 | FID 118.835 | cp 148435.828 | cq 148435.672
+Exp.Train:: time 2021-04-08 22:23:08,623 | step 38500 | loss(W1) 15.146 (29.156)
+Exp.Train:: time 2021-04-08 22:25:38,627 | step 39000 | loss(W1) 14.696 (13.797)
+Exp.Train:: time 2021-04-08 22:28:08,360 | step 39500 | loss(W1) 14.314 (11.516)
+Exp.Train:: time 2021-04-08 22:30:38,038 | step 40000 | loss(W1) 14.830 (16.000)
+
+Exp.Eval:: time 2021-04-08 22:31:47,769 | step 40000 | IS 2.897 | FID 118.894 | cp 145577.406 | cq 145577.891
+Exp.Train:: time 2021-04-08 22:34:16,475 | step 40500 | loss(W1) 17.201 (24.734)
+Exp.Train:: time 2021-04-08 22:36:46,232 | step 41000 | loss(W1) 14.179 (14.750)
+Exp.Train:: time 2021-04-08 22:39:16,439 | step 41500 | loss(W1) 17.353 (20.906)
+Exp.Train:: time 2021-04-08 22:41:46,823 | step 42000 | loss(W1) 15.597 (11.938)
+
+Exp.Eval:: time 2021-04-08 22:42:56,629 | step 42000 | IS 2.869 | FID 119.540 | cp 157988.922 | cq 157989.125
+Exp.Train:: time 2021-04-08 22:45:25,889 | step 42500 | loss(W1) 16.842 (19.859)
+Exp.Train:: time 2021-04-08 22:47:55,762 | step 43000 | loss(W1) 17.410 (12.609)
+Exp.Train:: time 2021-04-08 22:50:25,687 | step 43500 | loss(W1) 16.607 (22.969)
+Exp.Train:: time 2021-04-08 22:52:55,627 | step 44000 | loss(W1) 17.799 (19.188)
+
+Exp.Eval:: time 2021-04-08 22:54:05,373 | step 44000 | IS 3.040 | FID 128.829 | cp 188496.047 | cq 188496.047
+Exp.Train:: time 2021-04-08 22:56:34,479 | step 44500 | loss(W1) 19.331 (16.344)
+Exp.Train:: time 2021-04-08 22:59:04,730 | step 45000 | loss(W1) 17.357 (11.219)
+Exp.Train:: time 2021-04-08 23:01:34,809 | step 45500 | loss(W1) 16.231 (17.438)
+Exp.Train:: time 2021-04-08 23:04:04,806 | step 46000 | loss(W1) 18.442 (14.359)
+
+Exp.Eval:: time 2021-04-08 23:05:14,656 | step 46000 | IS 2.775 | FID 120.899 | cp 204475.719 | cq 204475.703
+Exp.Train:: time 2021-04-08 23:07:43,591 | step 46500 | loss(W1) 18.827 (28.781)
+Exp.Train:: time 2021-04-08 23:10:13,642 | step 47000 | loss(W1) 17.284 (19.875)
+Exp.Train:: time 2021-04-08 23:12:44,053 | step 47500 | loss(W1) 19.325 (22.938)
+Exp.Train:: time 2021-04-08 23:15:14,363 | step 48000 | loss(W1) 17.523 (10.781)
+
+Exp.Eval:: time 2021-04-08 23:16:24,048 | step 48000 | IS 3.247 | FID 126.945 | cp 204806.406 | cq 204806.125
+Exp.Train:: time 2021-04-08 23:18:53,072 | step 48500 | loss(W1) 16.788 (19.562)
+Exp.Train:: time 2021-04-08 23:21:23,087 | step 49000 | loss(W1) 17.504 (22.844)
+Exp.Train:: time 2021-04-08 23:23:53,035 | step 49500 | loss(W1) 15.896 (12.328)
+Exp.Train:: time 2021-04-08 23:26:22,804 | step 50000 | loss(W1) 19.550 (17.281)
+
+Exp.Eval:: time 2021-04-08 23:27:32,534 | step 50000 | IS 3.110 | FID 122.234 | cp 235769.047 | cq 235769.281
+Exp:: time 2021-04-08 23:27:32,591 | Final Evaluation
+Exp:: time 2021-04-08 23:28:40,827 | step 50000 | IS 3.077 | FID 123.032 | cp 235769.031 | cq 235769.484
+
+** cifar w1 3
+
 * NF

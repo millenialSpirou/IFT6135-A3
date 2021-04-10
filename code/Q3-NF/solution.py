@@ -25,7 +25,8 @@ class PlanarTransformation(torch.nn.Module):
         if torch.matmul(self.u, self.w.T) < -1:
             self.adjust_u()
 
-        x_ = x + self.u * torch.tanh(torch.dot(self.w, x) + self.b)
+        z = torch.matmul(torch.transpose(self.u, 0, 1), torch.tanh(torch.matmul(self.w, torch.transpose(x, 0, 1)) + self.b)) 
+        x_ = x + z.permute(1,0)
         return x_
 
     def get_logdet(self, x: torch.Tensor, eps:float = 1e-8) -> torch.Tensor:
@@ -38,8 +39,13 @@ class PlanarTransformation(torch.nn.Module):
         if torch.mm(self.u, self.w.T) < -1:
             self.adjust_u()
 
-        det = 1 + self.u.T @ self.w @ (1 - torch.square(torch.tanh(torch.dot(self.w, x) + self.b)))
-
+        d1 = 1 - torch.square(
+                torch.tanh(
+                    torch.matmul(
+                        self.w, torch.transpose(x, 0, 1)) + self.b))
+        d2 = torch.matmul(torch.transpose(self.w, 0, 1), d1)
+        det = (1 + torch.matmul(self.u, d2)).permute(1, 0)
+        
         return torch.log(eps + det)
 
     def adjust_u(self):
@@ -87,6 +93,9 @@ def loss1(z0: torch.Tensor, logdet: torch.Tensor) -> torch.Tensor:
     :returns: the log likelihood for each z0, thus a tensor of size (batch_size, 1)
     """
     # 6. WRITE YOUR CODE HERE
+    dim = z0.size(1)
+    d = torch.distributions.MultivariateNormal(torch.zeros(dim), torch.eye(dim))
+    nll = torch.unsqueeze((- (d.log_prob(z0) + logdet)), 1)
 
     return nll
 
@@ -100,5 +109,7 @@ def loss2(target_density: torch.Tensor, z0: torch.Tensor, logdet: torch.Tensor) 
     :returns: the log likelihood for each z0, thus a tensor of size (batch_size, 1)
     """
     # 8. WRITE YOUR CODE HERE
-
+    dim = z0.size(1)
+    d = torch.distributions.MultivariateNormal(torch.zeros(dim), torch.eye(dim))
+    loss = torch.unsqueeze(target_density + d.log_prob(z0) - logdet, 1)
     return loss
